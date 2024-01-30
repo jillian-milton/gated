@@ -1,0 +1,67 @@
+body{
+    margin: 100px;
+}
+
+.logo, .buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title{
+    font-family: 'Times New Roman', Times, serif;
+    color: #419B7B;
+    font-size: 48px;
+    margin: 4px;
+}
+
+.subtitle{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    color: #675B4A;
+    margin: 4px;
+}
+
+h2{
+    font-family: 'Montserrat';
+    color: #675B4A;
+    font-size: 20px;
+}
+
+button{
+    background-color: #419B7B;
+    color: white;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 20px;
+    border-style: none;
+    border-radius: 10px; 
+    padding: 10px;
+    margin: 10px;
+    width: 213px;
+    height: 56px; 
+    margin: 20px;
+}
+
+.login{
+    font-family: 'Open Sans';
+    font-size: 20px;
+    margin: 4px;
+    text-align: left;
+}
+
+.main{
+    display: table;
+    margin: 0 auto;
+}
+
+input{
+    height: 30px;
+    width: 200px;
+    border: solid #675B4A 2px;
+}
+
+form{
+    margin: 20px;
+}
