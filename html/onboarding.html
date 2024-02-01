@@ -3,9 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/onboarding.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
     <title>Create Account</title>
 </head>
 <body>
-    <h1> Create Account </h1>
+
+    <div class="header">
+        <img src="../img/back-arrow.png" width="40" height="40" id="back">
+        <h1> Create Account </h1>
+        <p> Enter your personal and academic information to create your account. The more information you enter, the easier it will be to make connections with peers. </p>
+    </div>
+    
+
+    <div class="main"> 
+        <form>
+            <p class="enter"> Name </p>
+            <input type="text">
+
+            <p class="enter"> Pronouns </p>
+            <select name="pronouns" id="pronouns"> 
+                <option value="blank"> </option>
+                <option value="he">he/him/his</option>
+                <option value="she">she/her/hers</option>
+                <option value="they">they/them/theirs</option>
+            </select>
+
+            <p class="enter"> Class Year </p>
+            <select name="year" id="year"> 
+                <option value="blank"> </option>
+                <option value="freshman">Freshman</option>
+                <option value="sophomore">Sophomore</option>
+                <option value="junior">Junior</option>
+                <option value="senior">Senior</option>
+            </select>
+        </form>
+
+        <p class="enter"> Major 1 </p>
+        <select name="major" id="major"> 
+            <option value="blank"> </option>
+            <option value="accounting">Accounting</option>
+            <option value="animal science">Animal Science</option>
+            <option value="biology">Biology</option>
+        </select>
+
+        <!-- plus and minus buttons go here -->
+
+        <p class="enter"> Concentration </p>
+        <input type="text">
+
+
+    </div>
+
+    <script src="../js/onboarding.js"></script>
 </body>
 </html>

@@ -1,0 +1,47 @@
+body{
+    margin-top: 100px;
+}
+
+h1{
+    font-familY: 'Montserrat';
+    font-size: 28px;
+    font-weight: bold;
+    color: #675B4A;
+    margin: 20px;
+}
+
+p{
+    font-familY: 'Open Sans';
+    font-size: 16px;
+    margin: 10px;
+    width: 30%;
+}
+
+.enter{
+    font-family: 'Montserrat';
+    font-size: 18px;
+    color: #675B4A;
+    margin: 4px;
+    text-align: left;
+}
+
+input{
+    height: 30px;
+    width: 200px;
+    border: solid #419B7B 2px;
+    font-family: 'Open Sans';
+}
+
+select{
+    height: 32px;
+    width: 210px;
+    border: solid #419B7B 2px;
+    font-family: 'Open Sans';
+}
+
+.main, .header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
