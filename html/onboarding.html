@@ -5,22 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/onboarding.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <title>Create Account</title>
 </head>
 <body>
 
     <div class="header">
         <img src="../img/back-arrow.png" width="40" height="40" id="back">
-        <h1> Create Account </h1>
+        <div class="center">
+            <h1> Create Account </h1>
         <p> Enter your personal and academic information to create your account. The more information you enter, the easier it will be to make connections with peers. </p>
+        </div>
+        
     </div>
     
 
-    <div class="main"> 
-        <form>
-            <p class="enter"> Name </p>
-            <input type="text">
-
+    <main> 
+            <div class="space">
+                <p class="enter"> Name </p>
+                <input type="text">
+            </div>
+        
+        <div class="space">
             <p class="enter"> Pronouns </p>
             <select name="pronouns" id="pronouns"> 
                 <option value="blank"> </option>
@@ -28,7 +34,9 @@
                 <option value="she">she/her/hers</option>
                 <option value="they">they/them/theirs</option>
             </select>
-
+        </div>
+            
+        <div class="space">
             <p class="enter"> Class Year </p>
             <select name="year" id="year"> 
                 <option value="blank"> </option>
@@ -37,23 +45,83 @@
                 <option value="junior">Junior</option>
                 <option value="senior">Senior</option>
             </select>
-        </form>
+        </div>
 
-        <p class="enter"> Major 1 </p>
-        <select name="major" id="major"> 
-            <option value="blank"> </option>
-            <option value="accounting">Accounting</option>
-            <option value="animal science">Animal Science</option>
-            <option value="biology">Biology</option>
-        </select>
+            <div class="space">
+                <p class="enter"> Major 1 </p>
+                <select name="major" id="major"> 
+                    <option value="blank"> </option>
+                    <option value="accounting">Accounting</option>
+                    <option value="animal science">Animal Science</option>
+                    <option value="biology">Biology</option>
+                </select>
+            </div>
 
-        <!-- plus and minus buttons go here -->
+        <div class="buttons">
+            <div class="add"> 
+                <p class="plus">-</p>
+            </div>
+    
+            <div class="add"> 
+                <p class="plus">+</p>
+            </div>
+        </div>
 
-        <p class="enter"> Concentration </p>
-        <input type="text">
+        <div class="space">
+            <p class="enter"> Concentration </p>
+            <input type="text">
+        </div>
 
+        <div class="space">
+            <p class="enter"> Minor 1 </p>
+            <select name="minor" id="minor"> 
+                <option value="blank"> </option>
+                <option value="marketing">Marketing</option>
+                <option value="animal science">Animal Science</option>
+                <option value="biology">Biology</option>
+            </select>
+        </div>
+        
+        <div class="buttons">
+            <div class="add"> 
+                <p class="plus">-</p>
+            </div>
+    
+            <div class="add"> 
+                <p class="plus">+</p>
+            </div>
+        </div>
 
-    </div>
+        <div class="space">
+            <p class="enter"> Country </p>
+            <select name="country" id="country"> 
+                <option value="blank"> </option>
+                <option value="accounting">United States</option>
+                <option value="afghan">Afghanistan</option>
+                <option value="china">China</option>
+                <option value="france">France</option>
+                <option value="germany">Germany</option>
+            </select>
+        </div>
+
+        <div class="space">
+            <p class="enter"> State </p>
+            <input type="text">
+        </div>
+
+        <div class="space">
+            <p class="enter"> County </p>
+            <input type="text">
+        </div>
+
+        <div class="space">
+            <p class="enter"> City </p>
+            <input type="text">
+        </div>
+
+        <button id="done"> Done </button>
+    
+    </main>
 
     <script src="../js/onboarding.js"></script>
 </body>
