@@ -3,9 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <title>Home Screen</title>
 </head>
 <body>
-    <h1> Gated Home Screen </h1>
+    <header>
+
+        <div class="column">
+            <div class="menu"> 
+                <button class="hamburger"> <img src="../img/hamburger.png" 
+                    width="50" height="50"> </button>
+            </div>
+           
+            <nav class="closed open"> 
+                <a href="home.html"> Home </a>            
+                <a href=""> Search People </a>
+                <a href=""> Search Courses </a>
+                <a href=""> My Courses </a>
+                <a href=""> Chats </a>
+                <a href=""> Recognize Someone </a>
+            </nav>
+
+        </div>
+       
+
+        <img src="../img/profile.png" height="50" width="50">
+
+
+    </header>
+
+
+    <div class="logo"> 
+        <image src="../img/logo.png" width="242" height="auto"/>
+        <h1 class="title"> GATED </h1>
+        <p class="subtitle"> Unlock your college experience </p>
+    </div>
+
+    <main> 
+        <p class="text">Find new people and insider information on campus. </p>
+
+        <div class="buttons">
+            <button id="people">Search People</button>
+            <button id="courses">Search Courses</button>
+            <button id="my">My Courses</button>
+        </div>
+    
+        <section class="chats"> 
+    
+            <h2> Notifications </h2>
+
+            <div class="box">
+                <div class="flex">
+                    <h3>Charlotte Weber</h3>
+                    <div class="circle"></div>
+                </div>
+                <p class="small">Thanks I will need it!</p>
+            </div>
+    
+            <button id="my">Chats</button>
+        </section>
+       
+    
+        <section class="recognize">
+            <h2 class="post">Recognition Wall</h2>
+
+            <div class="box">
+                <div class="flex">
+                    <img src="../img/profile.png" height="38" width="38">
+                    <h3 class="someone">Neil Nutt</h3>
+                </div>
+                <p class="small">Thanks Harper for helping me with my CSE 1010 homework. You made it so easy to understand. </p>
+            </div>
+
+            <button id="wall">Recognize Someone</button>
+        </section>
+
+    </main>
+
+   <script src="../js/home.js"></script>
+
 </body>
 </html>

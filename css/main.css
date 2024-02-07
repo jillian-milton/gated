@@ -61,6 +61,7 @@ input{
     width: 200px;
     border: solid #675B4A 2px;
     font-family: 'Open Sans';
+    font-size: 16px;
 }
 
 form{

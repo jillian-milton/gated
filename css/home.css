@@ -1,0 +1,147 @@
+body{
+    margin: 100px;
+}
+
+.logo, button, main, .open{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title{
+    font-family: 'Times New Roman', Times, serif;
+    color: #419B7B;
+    font-size: 48px;
+    margin: 4px;
+}
+
+.subtitle{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    color: #675B4A;
+    margin: 4px;
+}
+
+button{
+    background-color: #419B7B;
+    color: white;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 20px;
+    border-style: none;
+    border-radius: 10px; 
+    padding: 10px;
+    margin: 10px;
+    width: 213px;
+    height: 56px; 
+    margin: 20px;
+}
+
+.login{
+    font-family: 'Open Sans';
+    font-size: 20px;
+    margin: 4px;
+    text-align: left;
+}
+
+.text{
+    font-family: 'Open Sans';
+    font-size: 16px;
+    min-width: 10%;
+}
+
+.small{
+    font-family: 'Open Sans';
+    font-size: 12px;
+    margin: 3px;
+}
+
+
+.chats{
+    background-color: #F1E8DC;
+}
+
+.circle{
+    height: 15px;
+    width: 15px;
+    background-color: #419B7B;
+    border-radius: 50%;
+}
+
+h3{
+    color: #419B7B;
+    font-family: 'Montserrat';
+    font-size: 18px;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+h2{
+    font-family: 'Montserrat';
+    color: #675B4A;
+    font-size: 24px;
+    text-align: center; 
+}
+
+.post{
+     color: #419B7B;
+}
+
+
+.box{
+    width: 366px;
+    height: 85px;
+    background-color: white;
+    border: solid 2px #675B4A;
+}
+
+.hamburger{
+    background-color: white;
+}
+
+.closed{
+    display: none;
+}
+
+nav {
+    display: flex;
+    flex-direction: column; 
+    background-color: #419B7B;
+    gap: 10px;
+    align-items: left;
+    justify-content: flex-start;
+}
+
+.open{
+    padding: 10px;
+}
+
+nav a{
+    color: white; 
+    font-family: 'Montserrat';
+    font-size: 22px;
+    text-decoration: none; 
+}
+
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1px;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+}
+
+.someone{
+    color: #675B4A;
+    font-size: 20px;
+}
