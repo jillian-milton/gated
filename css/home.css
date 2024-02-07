@@ -1,5 +1,5 @@
 body{
-    margin: 100px;
+    margin: 0px;
 }
 
 .logo, button, main, .open{
@@ -115,6 +115,8 @@ nav {
     gap: 10px;
     align-items: left;
     justify-content: flex-start;
+    position:fixed;
+    top: 54px;
 }
 
 .open{
@@ -132,7 +134,7 @@ nav a{
 header{
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     gap: 1px;
 }
 
@@ -144,4 +146,18 @@ header{
 .someone{
     color: #675B4A;
     font-size: 20px;
+}
+
+
+
+@media(min-width: 370px) {
+    .fixed-width {
+        width: 370px;
+        margin: 0 auto;
+    }
+
+    .full-width {
+        width: 100vw;
+        position: relative;
+    }
 }

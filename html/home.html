@@ -9,12 +9,12 @@
     <title>Home Screen</title>
 </head>
 <body>
-    <header>
+    <header class="fixed-width">
 
         <div class="column">
             <div class="menu"> 
-                <button class="hamburger"> <img src="../img/hamburger.png" 
-                    width="50" height="50"> </button>
+                <a class="hamburger"> <img src="../img/hamburger.png" 
+                    width="50" height="50"> </a>
             </div>
            
             <nav class="closed open"> 
@@ -35,13 +35,13 @@
     </header>
 
 
-    <div class="logo"> 
+    <div class="logo fixed-width"> 
         <image src="../img/logo.png" width="242" height="auto"/>
         <h1 class="title"> GATED </h1>
         <p class="subtitle"> Unlock your college experience </p>
     </div>
 
-    <main> 
+    <main class="fixed-width"> 
         <p class="text">Find new people and insider information on campus. </p>
 
         <div class="buttons">
@@ -50,19 +50,23 @@
             <button id="my">My Courses</button>
         </div>
     
-        <section class="chats"> 
-    
-            <h2> Notifications </h2>
+        <section class="chats full-width"> 
+            <div class="fixed-width">
 
-            <div class="box">
-                <div class="flex">
-                    <h3>Charlotte Weber</h3>
-                    <div class="circle"></div>
+                <h2> Notifications </h2>
+    
+                <div class="box">
+                    <div class="flex">
+                        <h3>Charlotte Weber</h3>
+                        <div class="circle"></div>
+                    </div>
+                    <p class="small">Thanks I will need it!</p>
                 </div>
-                <p class="small">Thanks I will need it!</p>
+        
+                <button id="my">Chats</button>
+
             </div>
     
-            <button id="my">Chats</button>
         </section>
        
     
