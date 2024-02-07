@@ -67,3 +67,8 @@ input{
 form{
     margin: 20px;
 }
+
+.password{
+    font-family: 'Open Sans';
+    font-size: 24px;
+}
