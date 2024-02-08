@@ -1,26 +1,12 @@
 body{
-    margin: 100px;
+    margin: 0px;
 }
 
-.logo, .buttons{
+.logo, .buttons , .main{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-.title{
-    font-family: 'Times New Roman', Times, serif;
-    color: #419B7B;
-    font-size: 48px;
-    margin: 4px;
-}
-
-.subtitle{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 16px;
-    color: #675B4A;
-    margin: 4px;
 }
 
 h2{
@@ -52,8 +38,7 @@ button{
 }
 
 .main{
-    display: table;
-    margin: 0 auto;
+    margin-top: 0px;
 }
 
 input{
