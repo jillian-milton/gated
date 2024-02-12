@@ -62,12 +62,27 @@ button{
     background-color: #F1E8DC;
 }
 
-.circle{
-    height: 15px;
-    width: 15px;
+/* Add .circle class to .box to show circle indicator */
+:root {
+    /* Size of the circle */
+    --circle-size: 20px;
+}
+.box.circle::after{
+    content: '';
+    position: absolute;
+    right: 1em;
+    top:1em;
+    width: var(--circle-size);
+    height: var(--circle-size);
     background-color: #419B7B;
     border-radius: 50%;
 }
+
+/* leave space for the circle */
+.box.circle .row {
+    margin-right: var(--circle-size);
+}
+
 
 h3{
     color: #419B7B;
@@ -94,10 +109,10 @@ h2{
 
 
 .box{
-    width: 366px;
-    height: 85px;
     background-color: white;
     border: solid 2px #675B4A;
+    padding: 1em;
+    position: relative
 }
 
 .hamburger{
@@ -146,6 +161,26 @@ header{
 .someone{
     color: #675B4A;
     font-size: 20px;
+}
+
+.rounded{
+    border-radius: 50%;
+}
+
+
+.row {
+    display: flex;
+    gap: 1em;
+    align-items: flex-start;
+    justify-content:flex-start;
+}
+
+.row h3, .row h4, .row h5 {
+    margin: 0;
+}
+
+.border {
+    border: 2px solid rgb(86, 83, 83)
 }
 
 
