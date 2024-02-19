@@ -64,16 +64,6 @@ h1{
     text-align: center;
 }
 
-input{
-    border: 2px solid #675B4A;
-    font-size: 14px;
-    font-family: 'Open Sans';
-    width: 300px;
-    height: 20px; 
-    padding: 10px;
-    margin: 20px;
-}
-
 h2{
     font-family: 'Montserrat';
     font-size: 20px;
@@ -84,35 +74,6 @@ h2{
     padding-bottom: 4px;
     width: 430px; 
     /* Gradient is supposed to reach the end of the screen */
-}
-
-select{
-    height: 32px;
-    width: 210px;
-    border: solid #067A7A 2px;
-    font-family: 'Open Sans';
-}
-
-.green{
-    height: 10px;
-    width: 186px;
-    border: solid #067A7A 2px;
-    font-family: 'Open Sans';
-    margin: 0px;
-}
-
-.space{
-    margin-bottom: 20px;
-}
-
-.enter{
-    font-family: 'Montserrat';
-    font-weight: 500; 
-    font-size: 18px;
-    color: #000000;
-    margin: 4px;
-    text-align: left;
-    width: 70%;
 }
 
 button{
@@ -131,6 +92,10 @@ button{
     margin-top: 20px;
 }
 
+.filters{
+    background-color: #F1E8DC;
+}
+
 @media(min-width: 370px) {
     .fixed-width {
         width: 370px;
@@ -140,12 +105,5 @@ button{
     .full-width {
         width: 100vw;
         position: relative;
-    }
-}
-
-@media(max-width: 430px){
-    hr {
-        border: 1px solid white;
-        width: 60vw;
     }
 }

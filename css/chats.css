@@ -1,3 +1,7 @@
+body{
+    margin-top: 0px; 
+}
+
 /* Hamburger Menu Navigation */
 .hamburger{
     background-color: white;
@@ -21,6 +25,7 @@ nav {
 .open{
     padding: 4px;
     margin: 0px;
+    z-index: 1;
 }
 
 nav a{
@@ -50,13 +55,6 @@ hr {
     width: 30vw;
 }
 
-main{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
 h1{
     font-family: 'Montserrat';
     font-size: 28px;
@@ -64,17 +62,7 @@ h1{
     text-align: center;
 }
 
-input{
-    border: 2px solid #675B4A;
-    font-size: 14px;
-    font-family: 'Open Sans';
-    width: 300px;
-    height: 20px; 
-    padding: 10px;
-    margin: 20px;
-}
-
-h2{
+.gradient{
     font-family: 'Montserrat';
     font-size: 20px;
     color: white;
@@ -82,37 +70,92 @@ h2{
     background-image: linear-gradient(180deg, rgba(103, 91, 74, 1) , rgba(143, 126, 102, 1));
     padding-top: 4px;
     padding-bottom: 4px;
-    width: 430px; 
+    width: 100vw; 
     /* Gradient is supposed to reach the end of the screen */
+    margin-bottom: 0px;
 }
 
-select{
-    height: 32px;
-    width: 210px;
-    border: solid #067A7A 2px;
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+
+.small{
     font-family: 'Open Sans';
+    font-size: 14px;
+    margin: 3px;
 }
 
-.green{
-    height: 10px;
-    width: 186px;
-    border: solid #067A7A 2px;
-    font-family: 'Open Sans';
-    margin: 0px;
+
+.chats{
+    background-color: #F1E8DC;
+    padding: 20px;
+    height: 100vh;
+    z-index: 0;
 }
 
-.space{
-    margin-bottom: 20px;
+/* Add .circle class to .box to show circle indicator */
+:root {
+    /* Size of the circle */
+    --circle-size: 20px;
+}
+.box.circle::after{
+    content: '';
+    position: absolute;
+    right: 1em;
+    top:1em;
+    width: var(--circle-size);
+    height: var(--circle-size);
+    background-color: #067A7A;
+    border-radius: 50%;
 }
 
-.enter{
+/* leave space for the circle */
+.box.circle .row {
+    margin-right: var(--circle-size);
+}
+
+
+h3{
+    color: #067A7A;
     font-family: 'Montserrat';
-    font-weight: 500; 
     font-size: 18px;
-    color: #000000;
-    margin: 4px;
-    text-align: left;
-    width: 70%;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+h2{
+    font-family: 'Montserrat';
+    color: #675B4A;
+    font-size: 24px;
+    text-align: center; 
+}
+
+
+.box{
+    background-color: white;
+    border: solid 1px #675B4A;
+    padding: 1em;
+    margin-bottom: 20px;
+    position: relative
+}
+
+.row {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    justify-content:flex-start;
+}
+
+.row h3, .row h4, .row h5 {
+    margin: 0;
 }
 
 button{
@@ -120,16 +163,26 @@ button{
     color: white;
     font-family: 'Montserrat';
     font-weight: bold;
-    font-size: 32px;
+    font-size: 16px;
     border-style: none;
-    border-radius: 10px; 
+    border-radius: 4px; 
     padding: 10px;
-    width: 213px;
-    height: 56px; 
-    text-align: center;
-    margin-bottom: 30px;
-    margin-top: 20px;
+    margin: 10px;
+    width: 173px;
+    height: 45px; 
+    margin: 10px;
 }
+
+.flex{
+    display: flex;
+}
+
+.rounded{
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
 
 @media(min-width: 370px) {
     .fixed-width {

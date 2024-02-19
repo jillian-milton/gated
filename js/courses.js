@@ -7,7 +7,12 @@ hamburger.addEventListener('click', function(){
 })
 
 let search = document.querySelector('#search');
+let results = document.querySelector('.results');
+let hide = document.querySelector('.hide');
 
 search.addEventListener('click', function() {
-    window.location = '../html/resultspeople.html';
+   results.classList.toggle('hide');
 })
+
+
+

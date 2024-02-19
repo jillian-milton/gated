@@ -37,14 +37,14 @@ p{
 input{
     height: 30px;
     width: 200px;
-    border: solid #419B7B 2px;
+    border: solid #067A7A 2px;
     font-family: 'Open Sans';
 }
 
 select{
     height: 32px;
     width: 210px;
-    border: solid #419B7B 2px;
+    border: solid #067A7A 2px;
     font-family: 'Open Sans';
 }
 
@@ -79,7 +79,7 @@ select{
 }
 
 button{
-    background-color: #419B7B;
+    background-color: #067A7A;
     color: white;
     font-family: 'Montserrat';
     font-weight: bold;
@@ -92,4 +92,16 @@ button{
     text-align: center;
     margin-bottom: 30px;
     margin-top: 20px;
+}
+
+@media(min-width: 370px) {
+    .fixed-width {
+        width: 370px;
+        margin: 0 auto;
+    }
+
+    .full-width {
+        width: 100vw;
+        position: relative;
+    }
 }

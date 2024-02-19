@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/courses.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <title>Search Courses</title>
+</head>
+<body>
+
+    <header class="fixed-width">
+
+        <div class="column">
+            <div class="menu"> 
+                <a class="hamburger"> <img src="../img/hamburger.svg" 
+                    width="50" height="50"> </a>
+            </div>
+           
+            <nav class="closed open"> 
+                
+                <a href="home.html"> Home </a>  
+                <hr>          
+                <a href="searchpeople.html"> Search People </a>
+                <hr>
+                <a href="searchcourses.html"> Search Courses </a>
+                <hr>
+                <a href="mycourses.html"> My Courses </a>
+                <hr>
+                <a href="chats.html"> Chats </a>
+                <hr>
+                <a href="recognize.html"> Recognize Someone </a>
+                
+            </nav>
+
+        </div>
+       
+
+        <img src="../img/profile.svg" height="50" width="50">
+
+
+    </header>
+
+    <main>
+        <h1>Search Courses</h1>
+
+        <input type="text" placeholder="Find courses by">
+
+        <div class="flex2">
+            <div class="space">
+                <p class="enter"> Department </p>
+                <select name="semester" class="dept" id="semester"> 
+                    <option value="blank"> </option>
+                    <option value="dept">BIOL</option>
+                    <option value="dept">CHEM</option>
+                </select>
+            </div>
+    
+            <div class="space">
+                <p class="enter"> Course # </p>
+                <select name="year" class="dropdown2" id="year"> 
+                    <option value="blank"> </option>
+                    <option value="course">1102</option>
+                    <option value="course">1127Q</option>
+                </select>
+            </div>
+
+            <div class="space">
+                <p class="enter"> Instructor </p>
+                <select name="year" class="prof" id="year"> 
+                    <option value="blank"> </option>
+                    <option value="professor">Thomas Abbott</option>
+                    <option value="professor">Clyde Cady</option>
+                </select>
+            </div>
+
+        </div>
+
+        <button id="search"> Search </button>
+
+    </main>
+
+    <section class="hide results">
+
+        <div class="center">
+            <div class="box">
+                <div class="row">
+                    <img src="../img/profile.svg" class="rounded border">
+                    <p class="professor">Professor Cady</p>
+                </div>
+                <div class="row2">
+                    <p class="small">CHEM 1127Q</p>
+                    <button id="add"> Add Course </button>
+                </div>
+             
+            </div>
+        </div>
+
+        <div class="center">
+            <div class="box">
+                <div class="row">
+                    <img src="../img/profile.svg" class="rounded border">
+                    <p class="professor">Professor Abbott</p>
+                </div>
+                <div class="row2">
+                    <p class="small">BIOL 1107</p>
+                    <button id="add"> Add Course </button>
+                </div>
+             
+            </div>
+        </div>
+        
+
+    </section>
+
+
+
+
+    <script src="../js/courses.js"></script>
+</body>
+</html>

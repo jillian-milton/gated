@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/chats.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <title>Home Screen</title>
@@ -41,25 +41,24 @@
 
     </header>
 
+    <main>
+        <h1>Chats</h1>
 
-    <div class="logo fixed-width"> 
-        <image src="../img/logo.svg" width="270" height="auto"/>
-    </div>
+        <h2 class="gradient"> Create Chat </h2>
 
-    <main class="fixed-width"> 
-        <p class="text">Find new people and insider information on campus. </p>
-
-        <div class="buttons">
-            <button id="people">Search People</button>
-            <button id="courses">Search Courses</button>
-            <button id="my">My Courses</button>
+        <br>
+        <div class="flex">
+            <button id="group">Group Chat</button>
+            <button id="self">Individual Chat</button>
         </div>
-    
+      
+
+        <h2 class="gradient"> View Chats </h2>
+
         <section class="chats full-width"> 
             <div class="fixed-width">
 
-                <h2> Notifications </h2>
-    
+                <!-- Unread messages -->
                 <div class="box circle">
                     <div class="row">
                         <img src="../img/profile.svg" class="rounded">
@@ -89,48 +88,38 @@
                         </section>
                     </div>
                 </div>
-        
-                <button id="chats">Chats</button>
-                <br> <br>
+
+                <!-- Read messages -->
+
+                <div class="box">
+                    <div class="row">
+                        <img src="../img/profile.svg" class="rounded">
+                        <section>
+                            <h3>Jimmy John</h3>
+                            <p class="small">Cool thanks!</p>
+                        </section>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="row">
+                        <img src="../img/profile.svg" class="rounded">
+                        <section>
+                            <h3>Emily Smith</h3>
+                            <p class="small">Hey! What classes are we taking next semester?</p>
+                        </section>
+                    </div>
+                </div>
+
+
             </div>
     
-        </section>
-       
-    
-        <section class="recognize">
-            <h2 class="post">Recognition Wall</h2>
-
-            <div class="box">
-                <div class="row">
-                    <img src="../img/profile.svg" class="rounded border">
-                    <h3 class="someone">Neil Nutt</h3>
-                </div>
-                <p class="small">Thanks Harper for helping me with my CSE 1010 homework. You made it so easy to understand. </p>
-            </div>
-
-            <div class="box">
-                <div class="row">
-                    <img src="../img/profile.svg" class="rounded border">
-                    <h3 class="someone">Abby Anderson</h3>
-                </div>
-                <p class="small">Harper, it was great meeting you at the Women in Engineering Club. You are so smart. </p>
-            </div>
-
-            <div class="box">
-                <div class="row">
-                    <img src="../img/profile.svg" class="rounded border">
-                    <h3 class="someone">Emily Smith</h3>
-                </div>
-                <p class="small">Thanks for driving me to and from the XL Center for the basketball game.  I’m glad I met someone who likes women’s basketball as much as I do. </p>
-            </div>
-
-            <button id="wall">Recognize Someone</button>
-            <br> <br>
         </section>
 
     </main>
-
-   <script src="../js/home.js"></script>
+   
+       
+   <script src="../js/chats.js"></script>
 
 </body>
 </html>

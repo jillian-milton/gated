@@ -5,9 +5,3 @@ let closed = document.querySelector('.closed');
 hamburger.addEventListener('click', function(){
     open.classList.toggle('closed');
 })
-
-let search = document.querySelector('#search');
-
-search.addEventListener('click', function() {
-    window.location = '../html/resultspeople.html';
-})

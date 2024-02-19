@@ -1,3 +1,7 @@
+body{
+    margin-top: 0px; 
+}
+
 /* Hamburger Menu Navigation */
 .hamburger{
     background-color: white;
@@ -21,6 +25,7 @@ nav {
 .open{
     padding: 4px;
     margin: 0px;
+    z-index: 1;
 }
 
 nav a{
@@ -50,11 +55,11 @@ hr {
     width: 30vw;
 }
 
-main{
+main, .center{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center; 
 }
 
 h1{
@@ -64,71 +69,105 @@ h1{
     text-align: center;
 }
 
-input{
-    border: 2px solid #675B4A;
-    font-size: 14px;
-    font-family: 'Open Sans';
-    width: 300px;
-    height: 20px; 
+.box{
+    background-color: white;
+    border: solid 1px #675B4A;
+    border-radius: 14px;
     padding: 10px;
-    margin: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    width: 40%;
 }
 
-h2{
+#type{
+    background-color: white;
+    border: solid 1px #675B4A;
+    border-radius: 14px;
+    padding: 10px;
+    padding-bottom: 40px;
+    margin-top: 20px;
+    position: relative;
+    width: 40%;
+}
+
+.someone{
+    color: #675B4A;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0px;
+    padding: 0px;
+}
+
+.rounded{
+    border-radius: 50%;
+    height: 36px;
+    width: 36px;
+}
+
+
+.row {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    justify-content:flex-start;
+}
+
+.row h3, .row h4, .row h5 {
+    margin: 0;
+}
+
+.small{
+    font-family: 'Open Sans';
+    font-size: 16px;
+    margin: 3px;
+}
+
+h3{
+    color: #067A7A;
     font-family: 'Montserrat';
     font-size: 20px;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.button1{
+    background-color: #675B4A;
     color: white;
-    text-align: center;
-    background-image: linear-gradient(180deg, rgba(103, 91, 74, 1) , rgba(143, 126, 102, 1));
-    padding-top: 4px;
-    padding-bottom: 4px;
-    width: 430px; 
-    /* Gradient is supposed to reach the end of the screen */
-}
-
-select{
-    height: 32px;
-    width: 210px;
-    border: solid #067A7A 2px;
-    font-family: 'Open Sans';
-}
-
-.green{
-    height: 10px;
-    width: 186px;
-    border: solid #067A7A 2px;
-    font-family: 'Open Sans';
-    margin: 0px;
-}
-
-.space{
-    margin-bottom: 20px;
-}
-
-.enter{
     font-family: 'Montserrat';
-    font-weight: 500; 
-    font-size: 18px;
-    color: #000000;
-    margin: 4px;
-    text-align: left;
-    width: 70%;
+    font-weight: bold;
+    font-size: 20px;
+    border-style: none;
+    border-radius: 4px; 
+    padding: 10px;
+    margin: 10px;
+    width: 173px;
+    height: 45px; 
+    margin: 10px;
 }
 
-button{
+#post{
     background-color: #067A7A;
     color: white;
     font-family: 'Montserrat';
     font-weight: bold;
-    font-size: 32px;
+    font-size: 24px;
     border-style: none;
-    border-radius: 10px; 
+    border-radius: 14px; 
     padding: 10px;
+    margin: 10px;
     width: 213px;
-    height: 56px; 
-    text-align: center;
-    margin-bottom: 30px;
-    margin-top: 20px;
+    height: 58px; 
+    margin: 10px;
+}
+
+section{
+    background-color: #F1E8DC;
+    height: 100vh;
+    width: 100vw;
 }
 
 @media(min-width: 370px) {
@@ -147,5 +186,8 @@ button{
     hr {
         border: 1px solid white;
         width: 60vw;
+    }
+    .box{
+        width: 80%;
     }
 }

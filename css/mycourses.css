@@ -1,3 +1,7 @@
+body{
+    margin-top: 0px; 
+}
+
 /* Hamburger Menu Navigation */
 .hamburger{
     background-color: white;
@@ -21,6 +25,7 @@ nav {
 .open{
     padding: 4px;
     margin: 0px;
+    z-index: 1;
 }
 
 nav a{
@@ -54,7 +59,7 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center; 
 }
 
 h1{
@@ -64,17 +69,68 @@ h1{
     text-align: center;
 }
 
-input{
-    border: 2px solid #675B4A;
-    font-size: 14px;
-    font-family: 'Open Sans';
-    width: 300px;
-    height: 20px; 
-    padding: 10px;
-    margin: 20px;
+h2{
+    font-family: 'Montserrat';
+    font-size: 16px;
+    color: #675B4A;
 }
 
-h2{
+.flex{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.previous{
+    background-color: #067A7A;
+    color: white;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 15px;
+    border-style: none;
+    border-radius: 4px; 
+    width: 156px;
+    height: 33px; 
+   
+}
+
+th{
+    font-family: 'Montserrat';
+    font-size: 15px;
+    color: #675B4A;
+    padding: 5px;
+}
+
+td{
+    font-family: 'Open Sans';
+    font-size: 14px;
+    color: black;
+    padding: 5px;
+}
+
+.complete{
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: bold;
+    color: #067A7A;
+    padding: 5px;
+}
+
+.wrap{
+    text-wrap: wrap;
+}
+
+#rating{
+    background-color: #067A7A;
+    color: white;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    border-style: none;
+   
+}
+
+.gradient{
     font-family: 'Montserrat';
     font-size: 20px;
     color: white;
@@ -82,54 +138,23 @@ h2{
     background-image: linear-gradient(180deg, rgba(103, 91, 74, 1) , rgba(143, 126, 102, 1));
     padding-top: 4px;
     padding-bottom: 4px;
-    width: 430px; 
+    width: 100vw; 
     /* Gradient is supposed to reach the end of the screen */
+    margin-bottom: 0px;
 }
 
-select{
-    height: 32px;
-    width: 210px;
-    border: solid #067A7A 2px;
-    font-family: 'Open Sans';
-}
-
-.green{
-    height: 10px;
-    width: 186px;
-    border: solid #067A7A 2px;
-    font-family: 'Open Sans';
-    margin: 0px;
-}
-
-.space{
-    margin-bottom: 20px;
-}
-
-.enter{
-    font-family: 'Montserrat';
-    font-weight: 500; 
-    font-size: 18px;
-    color: #000000;
-    margin: 4px;
-    text-align: left;
-    width: 70%;
-}
-
-button{
+.rate{
     background-color: #067A7A;
     color: white;
     font-family: 'Montserrat';
     font-weight: bold;
-    font-size: 32px;
     border-style: none;
-    border-radius: 10px; 
-    padding: 10px;
-    width: 213px;
-    height: 56px; 
-    text-align: center;
-    margin-bottom: 30px;
-    margin-top: 20px;
+    font-size: 16px;
+    width: 47px;
+    height: 30px;
+   
 }
+
 
 @media(min-width: 370px) {
     .fixed-width {

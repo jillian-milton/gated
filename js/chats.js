@@ -6,8 +6,8 @@ hamburger.addEventListener('click', function(){
     open.classList.toggle('closed');
 })
 
-let search = document.querySelector('#search');
+let people = document.querySelector('#people');
 
-search.addEventListener('click', function() {
-    window.location = '../html/resultspeople.html';
+people.addEventListener('click', function() {
+    window.location = '../html/searchpeople.html';
 })
