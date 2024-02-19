@@ -190,4 +190,7 @@ section{
     .box{
         width: 80%;
     }
+    #type{
+        width: 80%;
+    }
 }
