@@ -64,29 +64,17 @@ h1{
     text-align: center;
 }
 
-h2{
-    font-family: 'Montserrat';
-    font-size: 20px;
-    color: white;
-    text-align: center;
-    background-image: linear-gradient(180deg, rgba(103, 91, 74, 1) , rgba(143, 126, 102, 1));
-    padding-top: 4px;
-    padding-bottom: 4px;
-    width: 430px; 
-    /* Gradient is supposed to reach the end of the screen */
-}
-
 button{
     background-color: #067A7A;
     color: white;
     font-family: 'Montserrat';
     font-weight: bold;
-    font-size: 32px;
+    font-size: 16px;
     border-style: none;
     border-radius: 10px; 
     padding: 10px;
-    width: 213px;
-    height: 56px; 
+    width: 173px;
+    height: 45px; 
     text-align: center;
     margin-bottom: 30px;
     margin-top: 20px;
@@ -94,6 +82,65 @@ button{
 
 .filters{
     background-color: #F1E8DC;
+    width: 100vw;
+    padding-bottom: 20px;
+}
+
+p{
+    font-family: 'Montserrat';
+    font-size: 20px;
+    color: black;
+}
+
+h2{
+    font-family: 'Montserrat';
+    font-size: 20px;
+    color: black;
+    font-weight: normal;
+    margin: 0px;
+    padding-top: 10px;
+}
+
+/* .white{
+    font-family: 'Montserrat';
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    padding: 1px;
+    margin: 0px;
+} */
+
+.chick{
+    width: 76px;
+    height: 38px; 
+    text-align: center;
+    background-color: #067A7A;
+}
+
+section{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.image{
+    background-color: white;
+    border: solid 2px #675B4A;
+    border-radius: 10px;
+    width: 173px;
+    height: 173px;
+}
+
+.terms{
+    font-family: 'Montserrat';
+    font-size: 14px;
+    color: #067A7A;
+    margin: 0px;
+    padding-top: 10px;
+}
+
+.results{
+    padding-top: 20px;
 }
 
 @media(min-width: 370px) {

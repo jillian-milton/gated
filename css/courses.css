@@ -168,8 +168,8 @@ button{
     z-index: 0;
 }
 
-.hide{
-    display: none;
+section{
+    background-color: white;
 }
 
 .box{

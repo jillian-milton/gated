@@ -90,6 +90,28 @@ h1{
     width: 40%;
 }
 
+select{
+    width: 173px;
+    height: 45px; 
+    border-radius: 4px;
+    background-color:#675B4A;
+    font-family: 'Montserrat';
+    font-size: 20px; 
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+input{
+    background-color: white;
+    border-style: none;
+    position: relative;
+    width: 100%;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    text-wrap: wrap;
+}
+
 .someone{
     color: #675B4A;
     font-size: 20px;

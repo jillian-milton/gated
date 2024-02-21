@@ -49,13 +49,20 @@
                 <img src="../img/profile.svg" class="rounded border">
                 <h3 class="someone">Harper Davis</h3>
             </div>
-            <!-- Change to input -->
-            <p class="small">Type here. </p>
+           
+            <input class="small" type="text" placeholder="Type here."> </input>
         </div>
 
         <div class="flex">
             <button class="button1" id="group">Add Image </button>
-            <button class="button1" id="self">Public</button>
+            
+            <div class="space">
+                <select name="pronouns" id="pronouns"> 
+                    <option value="blank"> Public </option>
+                    <option value="he">Private</option>
+                </select>
+            </div>
+
         </div>
 
         <button id="post">Post</button>

@@ -39,6 +39,7 @@ input{
     width: 200px;
     border: solid #067A7A 2px;
     font-family: 'Open Sans';
+    font-size: 16px;
 }
 
 select{
@@ -46,6 +47,7 @@ select{
     width: 210px;
     border: solid #067A7A 2px;
     font-family: 'Open Sans';
+    font-size: 16px; 
 }
 
 .add{
@@ -92,6 +94,28 @@ button{
     text-align: center;
     margin-bottom: 30px;
     margin-top: 20px;
+}
+
+#add, #add2{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #A2917B;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#minus, #minus2{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #A2917B;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 @media(min-width: 370px) {
