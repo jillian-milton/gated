@@ -1,0 +1,161 @@
+body{
+    margin-top: 0px; 
+
+}
+
+h1{
+    font-familY: 'Montserrat';
+    font-size: 28px;
+    font-weight: bold;
+    color: #675B4A;
+    text-align: center;
+}
+
+p{
+    font-family: 'Open Sans';
+    font-size: 14px;
+}
+
+ .center, main, .header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+.enter{
+    font-family: 'Montserrat';
+    font-weight: normal; 
+    font-size: 18px;
+    color: #000000;
+    margin: 4px;
+    text-align: left;
+    width: 70%;
+}
+
+.title{
+    font-familY: 'Montserrat';
+    font-size: 16px;
+    font-weight: bold;
+    color: #675B4A;
+    text-align: left;
+}
+
+.gradient{
+    font-family: 'Montserrat';
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    background-image: linear-gradient(180deg, rgba(103, 91, 74, 1) , rgba(143, 126, 102, 1));
+    padding-top: 4px;
+    padding-bottom: 4px;
+    width: 100vw; 
+    /* Gradient is supposed to reach the end of the screen */
+    margin-bottom: 0px;
+}
+
+.width{
+    width: 30%;
+}
+
+.rectangle{
+    width: 200px;
+    height: 24px;
+    background-color: #419B7B;
+}
+
+#hundred{
+    width: 200px;
+}
+
+#fifty{
+    width: calc(var(--bar) * 0.50);
+}
+
+#thirty{
+    width: calc(var(--bar) * 0.30);
+}
+
+#fifteen{
+    width: calc(var(--bar) * 0.15);
+}
+
+#five{
+    width: calc(var(--bar) * 0.05);
+}
+
+#zero{
+    width: calc(var(--bar) * 0.01);
+}
+
+#ten{
+    width: calc(var(--bar) * 0.10);
+}
+
+#twenty{
+    width: calc(var(--bar) * 0.20);
+}
+
+#sixty{
+    width: calc(var(--bar) * 0.60);
+}
+
+#seventy{
+    width: calc(var(--bar) * 0.70);
+}
+
+#eighty{
+    width: calc(var(--bar) * 0.80);
+}
+
+.rectangle{
+    --bar: 200px;
+    width: var(--bar);
+    height: 24px;
+    margin: 0px;
+    background-color: #067A7A;
+}
+
+strong{
+    color: #675B4A;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: 'Montserrat';
+}
+
+main{
+    padding-bottom: 60px;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+@media(min-width: 370px) {
+    .fixed-width {
+        width: 370px;
+        margin: 0 auto;
+    }
+
+    .full-width {
+        width: 100vw;
+        position: relative;
+    }
+}
+
+@media(max-width: 430px){
+
+    /* #very{
+        width: 50%;
+    } */
+
+    .flex{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 4px;
+    }
+}

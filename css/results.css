@@ -78,6 +78,7 @@ button{
     text-align: center;
     margin-bottom: 30px;
     margin-top: 20px;
+    white-space: nowrap;
 }
 
 .filters{
@@ -101,20 +102,19 @@ h2{
     padding-top: 10px;
 }
 
-/* .white{
-    font-family: 'Montserrat';
-    font-size: 20px;
-    color: white;
-    text-align: center;
-    padding: 1px;
-    margin: 0px;
-} */
-
 .chick{
     width: 76px;
     height: 38px; 
     text-align: center;
     background-color: #067A7A;
+}
+
+.chick .center{
+    text-align: center;
+    line-height: 38px;
+    color: white;
+    margin: 0px;
+    padding: 0px;
 }
 
 section{

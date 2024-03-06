@@ -11,3 +11,8 @@ let search = document.querySelector('#search');
 search.addEventListener('click', function() {
     window.location = '../html/resultspeople.html';
 })
+
+let profile = document.querySelector('#profile');
+profile.addEventListener('click', function() {
+    window.location = '../html/profile.html';
+})

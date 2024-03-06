@@ -10,6 +10,11 @@ done.addEventListener('click', function() {
     window.location = '../html/home.html';
 })
 
+let rate = document.querySelector('#rate');
+
+rate.addEventListener('click', function() {
+    window.location = '../html/survey.html';
+})
 
 let add = document.querySelector('#add');
 let remove = document.querySelector('#minus')

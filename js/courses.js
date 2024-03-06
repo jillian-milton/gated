@@ -6,6 +6,8 @@ hamburger.addEventListener('click', function(){
     open.classList.toggle('closed');
 })
 
+
+
 let search = document.querySelector('#search');
 let results = document.querySelector('#results');
 // let hide = document.querySelector('.hide');
@@ -16,7 +18,7 @@ search.addEventListener('click', function() {
    <div class="box">
        <div class="row">
            <img src="../img/profile.svg" class="rounded border">
-           <p class="professor">Professor Cady</p>
+           <a href="../html/rating.html" class="professor">Professor Cady</a>
        </div>
        <div class="row2">
            <p class="small">CHEM 1127Q</p>
@@ -30,7 +32,7 @@ search.addEventListener('click', function() {
    <div class="box">
        <div class="row">
            <img src="../img/profile.svg" class="rounded border">
-           <p class="professor">Professor Abbott</p>
+           <a href="../html/rating.html" class="professor">Professor Cady</a>
        </div>
        <div class="row2">
            <p class="small">BIOL 1107</p>
@@ -41,6 +43,12 @@ search.addEventListener('click', function() {
 </div>
 </section>`
 })
+
+let profile = document.querySelector('#profile');
+profile.addEventListener('click', function() {
+    window.location = '../html/profile.html';
+})
+
 
 
 

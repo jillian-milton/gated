@@ -93,7 +93,6 @@ main{
 .chats{
     background-color: #F1E8DC;
     padding: 20px;
-    height: 100vh;
     z-index: 0;
 }
 

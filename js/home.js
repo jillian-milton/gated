@@ -6,6 +6,11 @@ hamburger.addEventListener('click', function(){
     open.classList.toggle('closed');
 })
 
+let profile = document.querySelector('#profile');
+profile.addEventListener('click', function() {
+    window.location = '../html/profile.html';
+})
+
 let people = document.querySelector('#people');
 
 people.addEventListener('click', function() {

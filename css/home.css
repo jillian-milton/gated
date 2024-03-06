@@ -34,6 +34,15 @@ button{
     width: 218px;
 }
 
+#wall{
+    background-color: #067A7A;
+    color: white;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 18px;
+    white-space: nowrap;
+}
+
 .small{
     font-family: 'Open Sans';
     font-size: 14px;
