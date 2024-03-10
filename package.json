@@ -1,0 +1,15 @@
+{
+  "name": "gated",
+  "version": "1.0.0",
+  "description": "gated app back end",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jillian Milton <jillian.milton@uconn.edu>",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.3",
+    "nunjucks": "^3.2.4"
+  }
+}
