@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/people.css">
+    <title>Search People</title>
+</head>
+<body>
+    <header class="fixed-width">
+
+        <div class="column">
+            <div class="menu"> 
+                <a class="hamburger"> <img src="../img/hamburger.svg" 
+                    width="50" height="50"> </a>
+            </div>
+           
+            <nav class="closed open"> 
+                
+                <a href="home.html"> Home </a>  
+                <hr>          
+                <a href="searchpeople.html"> Search People </a>
+                <hr>
+                <a href="searchcourses.html"> Search Courses </a>
+                <hr>
+                <a href="mycourses.html"> My Courses </a>
+                <hr>
+                <a href="chats.html"> Chats </a>
+                <hr>
+                <a href="recognize.html"> Recognize Someone </a>
+                
+            </nav>
+
+        </div>
+       
+
+        <img id="profile" src="../img/profile.svg" height="50" width="50">
+
+
+    </header>
+
+
+    <main> 
+        <h1>Search People</h1>
+        
+            <input type="text" placeholder="Find people by">
+            <img src="../img/magnify.svg" height="16" width="16">
+            
+            <h2> Academics </h2>
+           
+            <div class="space">
+                <p class="enter"> Class Year </p>
+                <select name="year" id="year"> 
+                    <option value="blank"> </option>
+                    <option value="freshman">Freshman</option>
+                    <option value="sophomore">Sophomore</option>
+                    <option value="junior">Junior</option>
+                    <option value="senior">Senior</option>
+                </select>
+            </div>
+    
+                <div class="space">
+                    <p class="enter"> Major </p>
+                    <select name="major" id="major"> 
+                        <option value="blank"> </option>
+                        <option value="accounting">Accounting</option>
+                        <option value="animal science">Animal Science</option>
+                        <option value="biology">Biology</option>
+                    </select>
+                </div>
+
+                <div class="space">
+                    <p class="enter"> Course Number</p>
+                    <select name="number" id="number"> 
+                        <option value="blank"> </option>
+                        <option value="num1">CSE 2050</option>
+                        <option value="num2">CSE 2500</option>
+                        <option value="num3">CSE 3100</option>
+                    </select>
+                </div>
+
+       
+            <h2> Background </h2>
+
+            <div class="space">
+                <p class="enter"> Gender </p>
+                <select name="gender" id="gender"> 
+                    <option value="blank"> </option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="trans">Transgender</option>
+                    <option value="non">Nonbinary</option>
+                </select>
+            </div>
+
+            <div class="space">
+                <p class="enter"> Home Country </p>
+                <select name="country" id="country"> 
+                    <option value="blank"> </option>
+                    <option value="accounting">United States</option>
+                    <option value="afghan">Afghanistan</option>
+                    <option value="china">China</option>
+                    <option value="france">France</option>
+                    <option value="germany">Germany</option>
+                </select>
+            </div>
+
+            <div class="space">
+                <p class="enter"> Home State </p>
+                <select name="country" id="country"> 
+                    <option value="blank"> </option>
+                    <option value="accounting">Alabama</option>
+                    <option value="afghan">Connecticut</option>
+                    <option value="china">New Jersey</option>
+                    <option value="france">New York</option>
+                    <option value="germany">Ohio</option>
+                </select>
+            </div>
+
+            <div class="space">
+                <p class="enter"> UConn Dorm </p>
+                <select name="country" id="country"> 
+                    <option value="blank"> </option>
+                    <option value="accounting">Buckley</option>
+                    <option value="afghan">Shippee</option>
+                    <option value="china">South</option>
+                    <option value="france">McMahon</option>
+                    <option value="germany">North</option>
+                </select>
+            </div>
+
+            <div class="space">
+                <p class="enter"> County </p>
+                <input type="text" class="green">
+            </div>
+    
+            <div class="space">
+                <p class="enter"> City </p>
+                <input type="text" class="green">
+            </div>
+
+
+            <h2> Social </h2>
+
+            <div class="space">
+                <p class="enter"> Clubs </p>
+                <select name="major" id="major"> 
+                    <option value="blank"> </option>
+                    <option value="accounting">Acapella Club</option>
+                    <option value="animal science">Chamber Orchestra</option>
+                    <option value="biology">Ramen Club</option>
+                    <option value="biology">Tabletop Gaming Club</option>
+                    <option value="biology">Women in Engineering</option>
+                </select>
+            </div>
+
+            <div class="space">
+                <p class="enter"> Sports </p>
+                <select name="number" id="number"> 
+                    <option value="blank"> </option>
+                    <option value="blank">Basketball</option>
+                    <option value="num1">Football</option>
+                    <option value="num2">Ice Hockey</option>
+                    <option value="num3">Track and Field</option>
+                    <option value="biology">Volleyball</option>
+                </select>
+            </div>
+
+            <button id="search">Search</button>
+
+    </main>
+
+    <script src="../js/people.js"></script>
+</body>
+</html>

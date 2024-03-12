@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/profile.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <title>Profile</title>
+</head>
+<body>
+    <header class="fixed-width">
+
+        <div class="column">
+            <div class="menu"> 
+                <a class="hamburger"> <img src="../img/hamburger.svg" 
+                    width="50" height="50"> </a>
+            </div>
+           
+            <nav class="closed open"> 
+                
+                <a href="home.html"> Home </a>  
+                <hr>          
+                <a href="searchpeople.html"> Search People </a>
+                <hr>
+                <a href="searchcourses.html"> Search Courses </a>
+                <hr>
+                <a href="mycourses.html"> My Courses </a>
+                <hr>
+                <a href="chats.html"> Chats </a>
+                <hr>
+                <a href="recognize.html"> Recognize Someone </a>
+                
+            </nav>
+
+        </div>
+
+    </header>
+
+    <h1 class="center">Profile</h1>
+
+
+    <main> 
+
+        <section class="profile">
+            <div class="col1">
+                <img src="../img/profile.svg" height="106" width="106">
+                <button class="image">Edit</button>
+            </div>
+
+            <div class="col2">
+               <h1 class="name">Harper Davis</h1>
+               <p class="pronouns">she/her/hers</p>
+            </div>
+        </section>
+
+        <section class="beige center">
+            <div class="academic">
+                <div class="head">
+                    <h3>Academics and Background</h3>
+                    <button class="edit">Edit</button>
+                </div>
+            <p><strong>Class Year: </strong>Freshman</p>
+            <p><strong>Major: </strong>Computer Science and Engineering </p>
+            <p><strong>Concentration: </strong>N/A </p>
+            <p><strong>Minor: </strong>N/A </p>
+            <p><strong>Hometown: </strong> United States, Bergen County, Hackensack, NJ</p>
+            <p><strong>Race: </strong>African American</p>
+            </div>
+
+            <div class="social">
+                <div class="head">
+                    <h3>Clubs, Sports, and Interests</h3>
+                    <button class="edit">Edit</button>
+                </div>
+
+                <div class="activities">
+                    <div class="side1">
+                        <p>UConn Marching Band</p>
+                        <p>Diversabilities</p>
+                        <p>Fine Dining</p>
+                    </div>
+                    <div class="side2">
+                        <p>Tabletop Gaming Club</p>
+                        <p>Kayaking</p>
+                        <p>Luxury Hotels</p>
+                    </div>
+                    
+                </div>
+
+            </div>
+        </section>
+     
+        <section class="recognize"> 
+
+            <h1 class="center wall">Recognition Wall</h1>
+
+            <div class="center">
+                <div class="box">
+                    <div class="row">
+                        <img src="../img/profile.svg" class="rounded border">
+                        <h3 class="someone">Neil Nutt</h3>
+                    </div>
+                    <p class="small">Thanks Harper for helping me with my CSE 1010 homework. You made it so easy to understand. </p>
+                    <div class="privacy">
+                        <select name="pronouns" id="pronouns"> 
+                            <option value="blank"> Public </option>
+                            <option value="he">Private</option>
+                        </select>
+                        <button class="remove">Remove</button>
+                    </div>
+                </div>
+    
+                <div class="box">
+                    <div class="row">
+                        <img src="../img/profile.svg" class="rounded border">
+                        <h3 class="someone">Abby Anderson</h3>
+                    </div>
+                    <p class="small">Harper, it was great meeting you at the Women in Engineering Club. You are so smart. </p>
+                    <div class="privacy">
+                        <select name="pronouns" id="pronouns"> 
+                            <option value="blank"> Public </option>
+                            <option value="he">Private</option>
+                        </select>
+                        <button class="remove">Remove</button>
+                    </div>
+                </div>
+    
+                <div class="box">
+                    <div class="row">
+                        <img src="../img/profile.svg" class="rounded border">
+                        <h3 class="someone">Emily Smith</h3>
+                    </div>
+                    <p class="small">Thanks for driving me to and from the XL Center for the basketball game.  I’m glad I met someone who likes women’s basketball as much as I do. </p>
+                    <div class="privacy">
+                        <select name="pronouns" id="pronouns"> 
+                            <option value="blank"> Public </option>
+                            <option value="he">Private</option>
+                        </select>
+                        <button class="remove">Remove</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <button id="signout" class="center">Sign Out</button>
+
+    </main>
+
+    
+    
+    <script src="../js/profile.js"></script>
+</body>
+</html>

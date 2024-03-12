@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/mycourses.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <title>My Courses</title>
+</head>
+<body>
+    <header class="fixed-width">
+
+        <div class="column">
+            <div class="menu"> 
+                <a class="hamburger"> <img src="../img/hamburger.svg" 
+                    width="50" height="50"> </a>
+            </div>
+           
+            <nav class="closed open"> 
+                
+                <a href="home.html"> Home </a>  
+                <hr>          
+                <a href="searchpeople.html"> Search People </a>
+                <hr>
+                <a href="searchcourses.html"> Search Courses </a>
+                <hr>
+                <a href="mycourses.html"> My Courses </a>
+                <hr>
+                <a href="chats.html"> Chats </a>
+                <hr>
+                <a href="recognize.html"> Recognize Someone </a>
+                
+            </nav>
+
+        </div>
+       
+
+        <img id="profile" src="../img/profile.svg" height="50" width="50">
+
+
+    </header>
+
+    <main>
+        <h1>My Courses</h1>
+
+        <div class="flex">
+            <h2>Semester: Spring 2023</h2>
+            <button class="previous">Previous Semester</button>
+        </div>
+
+        <table>
+            <tr>
+                <th>Course #</th>
+                <th>Course Title</th>
+                <th>Instructor</th>
+                <th>My Rating</th>
+            </tr>
+            <tr>
+                <td>DMD 3470</td>
+                <td>Web Design 2</td>
+                <td>Brian Daley</td>
+                <td><button id="rating">Incomplete</button></td>
+            </tr>
+            <tr>
+                <td>DMD 3475</td>
+                <td>Coding for the Web</td>
+                <td>Brian Daley</td>
+                <td class="complete">Complete</td>
+            </tr>
+            <tr>
+                <td>DMD 3035</td>
+                <td>Interaction Design</td>
+                <td>Ting Zhou</td>
+                <td class="complete">Complete</td>
+            </tr>
+            <tr>
+                <td>HRTS 3254</td>
+                <td class="wrap">Business Solutions to Societal Challenges</td>
+                <td>Rachel Chambers</td>
+                <td class="complete">Complete</td>
+            </tr>
+
+        </table>
+
+        <h2 class="gradient"> Future Courses </h2>
+
+        <table>
+            <tr>
+                <th>Course #</th>
+                <th>Course Title</th>
+                <th>Instructor</th>
+                <th>Rating</th>
+            </tr>
+            <tr>
+                <td>CHEM 1127Q</td>
+                <td>General Chemistry 1</td>
+                <td>Clyde Cady</td>
+                <td><button class="rate">3.5</button></td>
+            </tr>
+            <tr>
+                <td>BIOL 1107</td>
+                <td>Principles of Biology 1</td>
+                <td>Thomas Abbott</td>
+                <td><button class="rate">4.2</button></td>
+            </tr>
+           
+        </table>
+
+
+    </main>
+
+    <script src="../js/mycourses.js"></script>
+
+    </body>
+</html>

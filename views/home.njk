@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <title>Home Screen</title>
+</head>
+<body>
+    <header class="fixed-width">
+
+        <div class="column">
+            <div class="menu"> 
+                <a class="hamburger"> <img src="../img/hamburger.svg" 
+                    width="50" height="50"> </a>
+            </div>
+           
+            <nav class="closed open"> 
+                
+                <a href="home.html"> Home </a>  
+                <hr>          
+                <a href="searchpeople.html"> Search People </a>
+                <hr>
+                <a href="searchcourses.html"> Search Courses </a>
+                <hr>
+                <a href="mycourses.html"> My Courses </a>
+                <hr>
+                <a href="chats.html"> Chats </a>
+                <hr>
+                <a href="recognize.html"> Recognize Someone </a>
+                
+            </nav>
+
+        </div>
+       
+
+        <img id="profile" src="../img/profile.svg" height="50" width="50">
+
+
+    </header>
+
+
+    <div class="logo fixed-width"> 
+        <image src="../img/logo.svg" width="270" height="auto"/>
+    </div>
+
+    <main class="fixed-width"> 
+        <p class="text">Find new people and insider information on campus. </p>
+
+        <div class="buttons">
+            <button id="people">Search People</button>
+            <button id="courses">Search Courses</button>
+            <button id="my">My Courses</button>
+        </div>
+    
+        <section class="chats full-width"> 
+            <div class="fixed-width">
+
+                <h2> Notifications </h2>
+    
+                <div class="box circle">
+                    <div class="row">
+                        <img src="../img/profile.svg" class="rounded">
+                        <section>
+                            <h3>Charlotte Weber</h3>
+                            <p class="small">Thanks I will need it!</p>
+                        </section>
+                    </div>
+                </div>
+
+                <div class="box circle">
+                    <div class="row">
+                        <img src="../img/group.svg" class="rounded">
+                        <section>
+                            <h3>CHEM 1127Q</h3>
+                            <p class="small">Glad we could help!</p>
+                        </section>
+                    </div>
+                </div>
+
+                <div class="box circle">
+                    <div class="row">
+                        <img src="../img/profile.svg" class="rounded">
+                        <section>
+                            <h3>Bob Jones</h3>
+                            <p class="small">Hey I see you live in New Jersey. Would you be wiling to give me a ride home for Spring Break?</p>
+                        </section>
+                    </div>
+                </div>
+        
+                <button id="chats">Chats</button>
+                <br> <br>
+            </div>
+    
+        </section>
+       
+    
+        <section class="recognize">
+            <h2 class="post">Recognition Wall</h2>
+
+            <div class="box">
+                <div class="row">
+                    <img src="../img/profile.svg" class="rounded border">
+                    <h3 class="someone">Neil Nutt</h3>
+                </div>
+                <p class="small">Thanks Harper for helping me with my CSE 1010 homework. You made it so easy to understand. </p>
+            </div>
+
+            <div class="box">
+                <div class="row">
+                    <img src="../img/profile.svg" class="rounded border">
+                    <h3 class="someone">Abby Anderson</h3>
+                </div>
+                <p class="small">Harper, it was great meeting you at the Women in Engineering Club. You are so smart. </p>
+            </div>
+
+            <div class="box">
+                <div class="row">
+                    <img src="../img/profile.svg" class="rounded border">
+                    <h3 class="someone">Emily Smith</h3>
+                </div>
+                <p class="small">Thanks for driving me to and from the XL Center for the basketball game.  I’m glad I met someone who likes women’s basketball as much as I do. </p>
+            </div>
+
+            <button id="wall">Recognize Someone</button>
+            <br> <br>
+        </section>
+
+    </main>
+
+   <script src="../js/home.js"></script>
+
+</body>
+</html>

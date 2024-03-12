@@ -12,14 +12,37 @@ nunjucks.configure('views', {
     express: app
 });
 
-// client.connect()
-
 // Static Files
 app.use(express.static('static'))
 
 app.get('/', (req, res) => {
 
-    res.render('index.njk', {title: "Gated Log In"});
+    res.render('index.njk');
+
+})
+
+
+app.get('/signup', (req, res) => {
+
+    res.render('signup.njk');
+
+})
+
+app.get('/onboarding', (req, res) => {
+
+    res.render('onboarding.njk');
+
+})
+
+app.get('/onboarding2', (req, res) => {
+
+    res.render('onboarding2.njk');
+
+})
+
+app.get('/home', (req, res) => {
+
+    res.render('home.njk');
 
 })
 

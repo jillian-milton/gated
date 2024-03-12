@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/main.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
-    <title>Gated Log In</title>
+    <title>Sign Up</title>
 </head>
 <body>
     <div class="logo"> 
@@ -14,7 +14,7 @@
     
     <div class="main"> 
         <form>
-            <h2> Sign In </h2>
+            <h2> Sign Up </h2>
             <p class="login"> School Email </p>
             <input type="text">
         </form>
@@ -23,27 +23,14 @@
             <input type="password" class="password">
         </form>
     </div>
+   
+   
 
     <div class="buttons">
-        <button id="signin"> Login </button>
         <button id="create"> Create Account </button>
     </div>
    
   
-    <script>
-
-        let account = document.querySelector('#create');
-
-account.addEventListener('click', function() {
-    window.location = '/signup';
-})
-
-let signin = document.querySelector('#signin');
-
-signin.addEventListener('click', function() {
-    window.location = '/home';
-})
-
-    </script>
+    <script src="../js/signup.js"></script>
 </body>
 </html>

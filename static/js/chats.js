@@ -11,8 +11,12 @@ profile.addEventListener('click', function() {
     window.location = '../html/profile.html';
 })
 
-let people = document.querySelector('#people');
+let self = document.querySelector('#self');
+self.addEventListener('click', function(){
+    window.location = '../html/text.html';
+})
 
-people.addEventListener('click', function() {
-    window.location = '../html/searchpeople.html';
+let group = document.querySelector('#group');
+group.addEventListener('click', function(){
+    window.location = '../html/groupchat.html';
 })

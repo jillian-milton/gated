@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/recognize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <title>Recognize Someone</title>
+</head>
+<body>
+    <header class="fixed-width">
+
+        <div class="column">
+            <div class="menu"> 
+                <a class="hamburger"> <img src="../img/hamburger.svg" 
+                    width="50" height="50"> </a>
+            </div>
+           
+            <nav class="closed open"> 
+                
+                <a href="home.html"> Home </a>  
+                <hr>          
+                <a href="searchpeople.html"> Search People </a>
+                <hr>
+                <a href="searchcourses.html"> Search Courses </a>
+                <hr>
+                <a href="mycourses.html"> My Courses </a>
+                <hr>
+                <a href="chats.html"> Chats </a>
+                <hr>
+                <a href="recognize.html"> Recognize Someone </a>
+                
+            </nav>
+
+        </div>
+       
+
+        <img id="profile" src="../img/profile.svg" height="50" width="50">
+
+
+    </header>
+
+    <main>
+        <h1>Post to Recognition Wall</h1>
+
+        <div id="type">
+            <div class="row">
+                <img src="../img/profile.svg" class="rounded border">
+                <h3 class="someone">Harper Davis</h3>
+            </div>
+           
+            <input class="small" type="text" placeholder="Type here."> </input>
+        </div>
+
+        <div class="flex">
+            <button class="button1" id="group">Add Image </button>
+            
+            <div class="space">
+                <select name="pronouns" id="pronouns"> 
+                    <option value="blank"> Public </option>
+                    <option value="he">Private</option>
+                </select>
+            </div>
+
+        </div>
+
+        <button id="post">Post</button>
+
+        <section class="recognize"> 
+
+            <h1>Who You Recognized</h1>
+
+            <div class="center">
+                <div class="box">
+                    <div class="row">
+                        <img src="../img/profile.svg" class="rounded border">
+                        <h3 class="someone">Neil Nutt</h3>
+                    </div>
+                    <p class="small">Thanks Harper for helping me with my CSE 1010 homework. You made it so easy to understand. </p>
+                </div>
+    
+                <div class="box">
+                    <div class="row">
+                        <img src="../img/profile.svg" class="rounded border">
+                        <h3 class="someone">Abby Anderson</h3>
+                    </div>
+                    <p class="small">Harper, it was great meeting you at the Women in Engineering Club. You are so smart. </p>
+                </div>
+    
+                <div class="box">
+                    <div class="row">
+                        <img src="../img/profile.svg" class="rounded border">
+                        <h3 class="someone">Emily Smith</h3>
+                    </div>
+                    <p class="small">Thanks for driving me to and from the XL Center for the basketball game.  I’m glad I met someone who likes women’s basketball as much as I do. </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="../js/recognize.js"></script>
+    </body>
+</html>

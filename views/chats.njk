@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/chats.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <title>Home Screen</title>
+</head>
+<body>
+    <header class="fixed-width">
+
+        <div class="column">
+            <div class="menu"> 
+                <a class="hamburger"> <img src="../img/hamburger.svg" 
+                    width="50" height="50"> </a>
+            </div>
+           
+            <nav class="closed open"> 
+                
+                <a href="home.html"> Home </a>  
+                <hr>          
+                <a href="searchpeople.html"> Search People </a>
+                <hr>
+                <a href="searchcourses.html"> Search Courses </a>
+                <hr>
+                <a href="mycourses.html"> My Courses </a>
+                <hr>
+                <a href="chats.html"> Chats </a>
+                <hr>
+                <a href="recognize.html"> Recognize Someone </a>
+                
+            </nav>
+
+        </div>
+       
+
+        <img id="profile" src="../img/profile.svg" height="50" width="50">
+
+
+    </header>
+
+    <main>
+        <h1>Chats</h1>
+
+        <h2 class="gradient"> Create Chat </h2>
+
+        <br>
+        <div class="flex">
+            <button id="group">Group Chat</button>
+            <button id="self">Individual Chat</button>
+        </div>
+      
+
+        <h2 class="gradient"> View Chats </h2>
+
+        <section class="chats full-width"> 
+            <div class="fixed-width">
+
+                <!-- Unread messages -->
+                <div class="box circle">
+                    <div class="row">
+                        <img src="../img/profile.svg" class="rounded">
+                        <section>
+                            <h3>Charlotte Weber</h3>
+                            <p class="small">Thanks I will need it!</p>
+                        </section>
+                    </div>
+                </div>
+
+                <div class="box circle">
+                    <div class="row">
+                        <img src="../img/group.svg" class="rounded">
+                        <section>
+                            <h3>CHEM 1127Q</h3>
+                            <p class="small">Glad we could help!</p>
+                        </section>
+                    </div>
+                </div>
+
+                <div class="box circle">
+                    <div class="row">
+                        <img src="../img/profile.svg" class="rounded">
+                        <section>
+                            <h3>Bob Jones</h3>
+                            <p class="small">Hey I see you live in New Jersey. Would you be wiling to give me a ride home for Spring Break?</p>
+                        </section>
+                    </div>
+                </div>
+
+                <!-- Read messages -->
+
+                <div class="box">
+                    <div class="row">
+                        <img src="../img/profile.svg" class="rounded">
+                        <section>
+                            <h3>Jimmy John</h3>
+                            <p class="small">Cool thanks!</p>
+                        </section>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="row">
+                        <img src="../img/profile.svg" class="rounded">
+                        <section>
+                            <h3>Emily Smith</h3>
+                            <p class="small">Hey! What classes are we taking next semester?</p>
+                        </section>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="row">
+                        <img src="../img/profile.svg" class="rounded">
+                        <section>
+                            <h3>Jane Doe</h3>
+                            <p class="small">Hey I see you live in New York. Would you be wiling to give me a ride home for Spring Break?</p>
+                        </section>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="row">
+                        <img src="../img/profile.svg" class="rounded">
+                        <section>
+                            <h3>Hannah Banana</h3>
+                            <p class="small">What classes are you taking next semester?</p>
+                        </section>
+                    </div>
+                </div>
+
+
+            </div>
+    
+        </section>
+
+    </main>
+   
+       
+   <script src="../js/chats.js"></script>
+
+</body>
+</html>

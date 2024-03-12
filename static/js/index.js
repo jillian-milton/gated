@@ -7,5 +7,5 @@ account.addEventListener('click', function() {
 let signin = document.querySelector('#signin');
 
 signin.addEventListener('click', function() {
-    window.location = '../html/home.html';
+    window.location = '/html/home.html';
 })
