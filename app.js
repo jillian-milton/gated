@@ -1,3 +1,4 @@
+require('dotenv').config()
 const express = require('express');
 const nunjucks = require('nunjucks');
 
@@ -5,12 +6,21 @@ const app = express();
 const port = 3000;
 
 
+
+// configure pg
+const pg = require('pg')
+const client = new pg.Client({
+    connectionString: process.env.CONNECTION_STRING
+})
+
 // Configure Nunjucks
 nunjucks.configure('views', {
     autoescape: true,
     noCache: process.env.NODE_ENV !== 'production',
     express: app
 });
+
+client.connect()
 
 // Static Files
 app.use(express.static('static'))
@@ -28,9 +38,14 @@ app.get('/signup', (req, res) => {
 
 })
 
-app.get('/onboarding', (req, res) => {
+app.get('/onboarding', async (req, res) => {
 
-    res.render('onboarding.njk');
+    let results = []
+    
+    results = await client.query("SELECT distinct name,FROM majors, WHERE name NOT LIKE '%Minor%', ORDER BY name")
+    
+    
+    res.render('onboarding.njk', {rows: results.rows});
 
 })
 
