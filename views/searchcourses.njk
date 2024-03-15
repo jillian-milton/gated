@@ -20,11 +20,11 @@
            
             <nav class="closed open"> 
                 
-                <a href="home.html"> Home </a>  
+                <a href="/home"> Home </a>  
                 <hr>          
                 <a href="searchpeople.html"> Search People </a>
                 <hr>
-                <a href="searchcourses.html"> Search Courses </a>
+                <a href="/searchcourses"> Search Courses </a>
                 <hr>
                 <a href="mycourses.html"> My Courses </a>
                 <hr>
@@ -46,35 +46,46 @@
         <h1>Search Courses</h1>
 
         <input type="text" placeholder="Find courses by">
-
+       
         <div class="flex2">
             <div class="space">
                 <p class="enter"> Department </p>
                 <select name="semester" class="dept" id="semester"> 
                     <option value="blank"> </option>
-                    <option value="dept">BIOL</option>
-                    <option value="dept">CHEM</option>
+
+                     {% for courses in rows %}
+
+                            <option>{{courses.subject}} </option>
+                       
+                     {% endfor %}
                 </select>
             </div>
-    
+        
             <div class="space">
                 <p class="enter"> Course # </p>
                 <select name="year" class="dropdown2" id="year"> 
                     <option value="blank"> </option>
-                    <option value="course">1102</option>
-                    <option value="course">1127Q</option>
+
+                     {% for courses in nums %}
+
+                            <option>{{courses.course_number}} </option>
+                       
+                     {% endfor %}
                 </select>
             </div>
-
+        
             <div class="space">
                 <p class="enter"> Instructor </p>
                 <select name="year" class="prof" id="year"> 
-                    <option value="blank"> </option>
-                    <option value="professor">Thomas Abbott</option>
-                    <option value="professor">Clyde Cady</option>
+
+                     {% for courses in col %}
+
+                            <option>{{courses.instructor}} </option>
+                       
+                     {% endfor %}
                 </select>
             </div>
-
+        
         </div>
 
         <button id="search"> Search </button>

@@ -1,13 +1,13 @@
 let back = document.querySelector('#back');
 
 back.addEventListener('click', function() {
-    window.location = '../html/signup.html';
+    window.location = '/signup';
 })
 
 let done = document.querySelector('#done');
 
 done.addEventListener('click', function() {
-    window.location = '../html/onboarding2.html';
+    window.location = '/onboarding2';
 })
 
 let add = document.querySelector('#add');
@@ -15,15 +15,21 @@ let remove = document.querySelector('#minus')
 let major = document.querySelector('.major')
 
 add.addEventListener('click', function(){
-    major.innerHTML += `   <div class="space">
+    major.innerHTML += ` <div class="space">
     <p class="enter"> Major 2 </p>
-    <select name="major" id="major"> 
+
+    <select name="major" id="major">
+
         <option value="blank"> </option>
-        <option value="accounting">Accounting</option>
-        <option value="animal science">Animal Science</option>
-        <option value="biology">Biology</option>
+
+         {% for majors in rows %}
+
+                <option>{{majors.name}} </option>
+           
+         {% endfor %}
+
     </select>
-</div>`
+</div> `
 })
 
 remove.addEventListener('click', function(){

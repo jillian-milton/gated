@@ -61,11 +61,18 @@
 
             <div class="space">
                 <p class="enter"> Major 1 </p>
-                <select name="major" id="major"> 
+
+                <select name="major" id="major">
+
                     <option value="blank"> </option>
-                     {% for name in rows %}
-                     <option>{{majors.name}} </option>
+                    <option value="blank">Undecided</option>
+
+                     {% for majors in rows %}
+
+                            <option>{{majors.name}} </option>
+                       
                      {% endfor %}
+
                 </select>
             </div>
 
@@ -90,19 +97,38 @@
 
 
         <div class="space">
-            <p class="enter"> Concentration </p>
-            <input type="text">
-        </div>
+                <p class="enter"> Concentration </p>
 
-        <div class="space">
-            <p class="enter"> Minor 1 </p>
-            <select name="minor" id="minor"> 
-                <option value="blank"> </option>
-                <option value="marketing">Marketing</option>
-                <option value="animal science">Animal Science</option>
-                <option value="biology">Biology</option>
-            </select>
-        </div>
+                <select name="major" id="major">
+
+                    <option value="blank"> </option>
+                    <option value="not"> N/A </option>
+
+                     {% for majors in col %}
+
+                            <option>{{majors.concentration}} </option>
+                       
+                     {% endfor %}
+
+                </select>
+            </div>
+
+     <div class="space">
+                <p class="enter"> Minor 1 </p>
+
+                <select name="major" id="major">
+
+                    <option value="blank"> </option>
+                    <option value="blank">N/A</option>
+
+                     {% for majors in row %}
+
+                            <option>{{majors.name}} </option>
+                       
+                     {% endfor %}
+
+                </select>
+            </div>
         
          <div class="minor">
 
@@ -166,6 +192,8 @@
     
     </main>
 
-    <script src="../js/onboarding.js"></script>
+    <script src="../js/onboarding.js">
+       
+    </script>
 </body>
 </html>

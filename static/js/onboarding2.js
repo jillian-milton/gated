@@ -1,13 +1,13 @@
 let back = document.querySelector('#back');
 
 back.addEventListener('click', function() {
-    window.location = '../html/onboarding.html';
+    window.location = '/onboarding';
 })
 
 let done = document.querySelector('#done');
 
 done.addEventListener('click', function() {
-    window.location = '../html/home.html';
+    window.location = '/home';
 })
 
 let rate = document.querySelector('#rate');

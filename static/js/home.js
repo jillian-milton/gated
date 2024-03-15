@@ -20,7 +20,7 @@ people.addEventListener('click', function() {
 let courses = document.querySelector('#courses');
 
 courses.addEventListener('click', function() {
-    window.location = '../html/searchcourses.html';
+    window.location = '/searchcourses';
 })
 
 let my = document.querySelector('#my');

@@ -40,24 +40,62 @@ app.get('/signup', (req, res) => {
 
 app.get('/onboarding', async (req, res) => {
 
-    let results = []
+    let major = []
     
-    results = await client.query("SELECT distinct name,FROM majors, WHERE name NOT LIKE '%Minor%', ORDER BY name")
+    major = await client.query("SELECT distinct name FROM majors WHERE name NOT LIKE '%Minor%' ORDER BY name")
     
+    let minor = []
     
-    res.render('onboarding.njk', {rows: results.rows});
+    minor = await client.query("SELECT distinct name FROM majors WHERE name LIKE '%Minor%' ORDER BY name")
+
+    let concentration = []
+    
+    concentration = await client.query("SELECT concentration from majors WHERE concentration NOT LIKE '%null%' ORDER BY concentration")
+    
+
+
+    res.render('onboarding.njk', {rows: major.rows, row: minor.rows, col: concentration.rows});
 
 })
 
-app.get('/onboarding2', (req, res) => {
+app.get('/onboarding2', async (req, res) => {
 
-    res.render('onboarding2.njk');
+
+    let dept = []
+    dept = await client.query("SELECT distinct subject FROM courses ORDER BY subject")
+
+    let number = []
+    number = await client.query("SELECT distinct course_number FROM courses ORDER BY course_number")
+
+    let prof = []
+    prof = await client.query("SELECT distinct instructor FROM courses ORDER BY instructor")
+
+    
+    res.render('onboarding2.njk', {rows: dept.rows, nums: number.rows, col: prof.rows});
 
 })
 
 app.get('/home', (req, res) => {
 
     res.render('home.njk');
+
+})
+
+
+app.get('/searchcourses', async (req, res) => {
+
+
+    let dept = []
+    dept = await client.query("SELECT distinct subject FROM courses ORDER BY subject")
+
+    let number = []
+    number = await client.query("SELECT distinct course_number FROM courses ORDER BY course_number")
+
+    let prof = []
+    prof = await client.query("SELECT distinct instructor FROM courses ORDER BY instructor")
+
+    
+    res.render('searchcourses.njk', {rows: dept.rows, nums: number.rows, col: prof.rows});
 
 })
 
