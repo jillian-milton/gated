@@ -1,5 +1,7 @@
 body{
     margin-top: 0px; 
+    margin-left: 0px;
+    margin-right: 0px;
 
 }
 
@@ -148,7 +150,7 @@ button{
    
 }
 
-#search {
+#search, #search2 {
     background-color: #067A7A;
     color: white;
     font-family: 'Montserrat';
@@ -222,7 +224,7 @@ h3{
 }
 
 #add{
-    width: 105px;
+    width: 120px;
     height: 38px;
     font-size: 15px;
 }
@@ -237,6 +239,18 @@ h3{
 
 a{
     font-family: 'Montserrat';
+}
+
+h2{
+    font-family: 'Montserrat';
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    background-image: linear-gradient(180deg, rgba(103, 91, 74, 1) , rgba(143, 126, 102, 1));
+    padding-top: 4px;
+    padding-bottom: 4px;
+    width: 430px; 
+    /* Gradient is supposed to reach the end of the screen */
 }
 
 @media(min-width: 370px) {

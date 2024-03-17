@@ -7,10 +7,8 @@ hamburger.addEventListener('click', function(){
 })
 
 
-
 let search = document.querySelector('#search');
 let results = document.querySelector('#results');
-// let hide = document.querySelector('.hide');
 
 search.addEventListener('click', function() {
    results.innerHTML = ` <section class="results">
@@ -18,10 +16,10 @@ search.addEventListener('click', function() {
    <div class="box">
        <div class="row">
            <img src="../img/profile.svg" class="rounded border">
-           <a href="../html/rating.html" class="professor">Professor Cady</a>
+           <a href="../html/rating.html" class="professor">Professor McLaughlin</a>
        </div>
        <div class="row2">
-           <p class="small">CHEM 1127Q</p>
+           <p class="small">STAT 1100Q</p>
            <button id="add"> Add Course </button>
        </div>
     

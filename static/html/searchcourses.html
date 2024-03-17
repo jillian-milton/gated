@@ -45,7 +45,10 @@
     <main>
         <h1>Search Courses</h1>
 
-        <input type="text" placeholder="Find courses by">
+        <h2> Search by Course </h2>
+
+        <input type="text" placeholder="e.g. STAT 1100Q">
+       
 
         <div class="flex2">
             <div class="space">
@@ -66,15 +69,20 @@
                 </select>
             </div>
 
-            <div class="space">
-                <p class="enter"> Instructor </p>
-                <select name="year" class="prof" id="year"> 
-                    <option value="blank"> </option>
-                    <option value="professor">Thomas Abbott</option>
-                    <option value="professor">Clyde Cady</option>
-                </select>
-            </div>
+        </div>
 
+
+ <h2> Search by Instructor </h2>
+
+ <input type="text" placeholder="e.g. Kathleen McLaughlin">
+
+        <div class="space">
+            <p class="enter"> Instructor </p>
+            <select name="year" class="prof" id="year"> 
+                <option value="blank"> </option>
+                <option value="professor">Thomas Abbott</option>
+                <option value="professor">Clyde Cady</option>
+            </select>
         </div>
 
         <button id="search"> Search </button>
