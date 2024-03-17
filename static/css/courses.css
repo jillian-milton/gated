@@ -150,7 +150,7 @@ button{
    
 }
 
-#search, #search2 {
+#search {
     background-color: #067A7A;
     color: white;
     font-family: 'Montserrat';
@@ -227,6 +227,7 @@ h3{
     width: 120px;
     height: 38px;
     font-size: 15px;
+    white-space: nowrap;
 }
 
 .row2{
