@@ -1,11 +1,19 @@
 let back2 = document.querySelector('#back');
 
 back2.addEventListener('click', function() {
-    window.location = '../html/searchpeople.html';
+    // window.location = '../html/searchpeople.html';
+    window.location = '/searchpeople';
 })
 
-let friend = document.querySelector('.col');
-// let friends = document.querySelectorAll('.col');
-friend.addEventListener('click', function() {
-    window.location = '../html/friendprofile.html';
+let friend = document.querySelectorAll('.col');
+
+friend.forEach(btn => {
+    btn.addEventListener('click', function() {
+        window.location = '/friendprofile';
+    })
+});
+
+let button = document.querySelector('button');
+button.addEventListener('click', function(){
+    window.location = '/groupchat';
 })

@@ -45,32 +45,19 @@
         </div>
        
         <div class="flex2">
+
             <div class="space">
-                <p class="enter"> Department </p>
-                <select name="semester" class="dept" id="semester"> 
-                    <option value="blank"> </option>
+                    <p class="enter"> Course Number</p>
+                    <select name="number" class="dropdown" id="number"> 
+                        <option value="blank"> </option>
+                        
+                         {% for courses in numbers %}
 
-                     {% for courses in rows %}
-
-                            <option>{{courses.subject}} </option>
+                            <option> <span>{{courses.subject}} </span><span>{{courses.course_number}}</span> </option>
                        
                      {% endfor %}
-                </select>
-            </div>
-        
-            <div class="space">
-                <p class="enter"> Course # </p>
-                <select name="year" class="dropdown2" id="year"> 
-                    <option value="blank"> </option>
-
-                     {% for courses in nums %}
-
-                            <option>{{courses.course_number}} </option>
-                       
-                     {% endfor %}
-                </select>
-            </div>
-        
+                    </select>
+                </div>
             <div class="space">
                 <p class="enter"> Instructor </p>
                 <select name="year" class="prof" id="year"> 
@@ -82,139 +69,154 @@
                      {% endfor %}
                 </select>
             </div>
-        
+
+        </div>
+
+        <div class="uconn">
+            <div class="empty"></div> 
+             <button id="rate"> Rate </button>
         </div>
         
-        <button id="rate"> Rate </button>
+        
+        <div class="flex2">
+
+            <div class="space">
+                    <p class="enter"> Course Number</p>
+                    <select name="number" class="dropdown" id="number"> 
+                        <option value="blank"> </option>
+                        
+                         {% for courses in numbers %}
+
+                            <option> <span>{{courses.subject}} </span><span>{{courses.course_number}}</span> </option>
+                       
+                     {% endfor %}
+                    </select>
+                </div>
+            <div class="space">
+                <p class="enter"> Instructor </p>
+                <select name="year" class="prof" id="year"> 
+
+                     {% for courses in col %}
+
+                            <option>{{courses.instructor}} </option>
+                       
+                     {% endfor %}
+                </select>
+            </div>
+
+        </div>
+
+         <div class="uconn">
+            <div class="empty"></div> 
+             <button id="rate"> Rate </button>
+        </div>
         
 
         <div class="flex2">
-            <div class="space">
-                <p class="enter"> Department </p>
-                <select name="semester" class="dept" id="semester"> 
-                    <option value="blank"> </option>
-                    <option value="dept">BIOL</option>
-                    <option value="dept">CHEM</option>
-                </select>
-            </div>
-    
-            <div class="space">
-                <p class="enter"> Course # </p>
-                <select name="year" class="dropdown2" id="year"> 
-                    <option value="blank"> </option>
-                    <option value="course">1102</option>
-                    <option value="course">1127Q</option>
-                </select>
-            </div>
 
+            <div class="space">
+                    <p class="enter"> Course Number</p>
+                    <select name="number" class="dropdown" id="number"> 
+                        <option value="blank"> </option>
+                        
+                         {% for courses in numbers %}
+
+                            <option> <span>{{courses.subject}} </span><span>{{courses.course_number}}</span> </option>
+                       
+                     {% endfor %}
+                    </select>
+                </div>
             <div class="space">
                 <p class="enter"> Instructor </p>
                 <select name="year" class="prof" id="year"> 
-                    <option value="blank"> </option>
-                    <option value="professor">Thomas Abbott</option>
-                    <option value="professor">Clyde Cady</option>
+
+                     {% for courses in col %}
+
+                            <option>{{courses.instructor}} </option>
+                       
+                     {% endfor %}
                 </select>
             </div>
 
         </div>
 
-        <button id="rate"> Rate </button>
+          <div class="uconn">
+            <div class="empty"></div> 
+             <button id="rate"> Rate </button>
+        </div>
+        
+
 
         <div class="flex2">
-            <div class="space">
-                <p class="enter"> Department </p>
-                <select name="semester" class="dept" id="semester"> 
-                    <option value="blank"> </option>
-                    <option value="dept">BIOL</option>
-                    <option value="dept">CHEM</option>
-                </select>
-            </div>
-    
-            <div class="space">
-                <p class="enter"> Course # </p>
-                <select name="year" class="dropdown2" id="year"> 
-                    <option value="blank"> </option>
-                    <option value="course">1102</option>
-                    <option value="course">1127Q</option>
-                </select>
-            </div>
 
+            <div class="space">
+                    <p class="enter"> Course Number</p>
+                    <select name="number" class="dropdown" id="number"> 
+                        <option value="blank"> </option>
+                        
+                         {% for courses in numbers %}
+
+                            <option> <span>{{courses.subject}} </span><span>{{courses.course_number}}</span> </option>
+                       
+                     {% endfor %}
+                    </select>
+                </div>
             <div class="space">
                 <p class="enter"> Instructor </p>
                 <select name="year" class="prof" id="year"> 
-                    <option value="blank"> </option>
-                    <option value="professor">Thomas Abbott</option>
-                    <option value="professor">Clyde Cady</option>
+
+                     {% for courses in col %}
+
+                            <option>{{courses.instructor}} </option>
+                       
+                     {% endfor %}
                 </select>
             </div>
 
         </div>
 
-        <button id="rate"> Rate </button>
+         <div class="uconn">
+            <div class="empty"></div> 
+             <button id="rate"> Rate </button>
+        </div>
+        
 
         <div class="flex2">
-            <div class="space">
-                <p class="enter"> Department </p>
-                <select name="semester" class="dept" id="semester"> 
-                    <option value="blank"> </option>
-                    <option value="dept">BIOL</option>
-                    <option value="dept">CHEM</option>
-                </select>
-            </div>
-    
-            <div class="space">
-                <p class="enter"> Course # </p>
-                <select name="year" class="dropdown2" id="year"> 
-                    <option value="blank"> </option>
-                    <option value="course">1102</option>
-                    <option value="course">1127Q</option>
-                </select>
-            </div>
 
+            <div class="space">
+                    <p class="enter"> Course Number</p>
+                    <select name="number" class="dropdown" id="number"> 
+                        <option value="blank"> </option>
+                        
+                         {% for courses in numbers %}
+
+                            <option> <span>{{courses.subject}} </span><span>{{courses.course_number}}</span> </option>
+                       
+                     {% endfor %}
+                    </select>
+                </div>
             <div class="space">
                 <p class="enter"> Instructor </p>
                 <select name="year" class="prof" id="year"> 
-                    <option value="blank"> </option>
-                    <option value="professor">Thomas Abbott</option>
-                    <option value="professor">Clyde Cady</option>
+
+                     {% for courses in col %}
+
+                            <option>{{courses.instructor}} </option>
+                       
+                     {% endfor %}
                 </select>
             </div>
 
         </div>
 
-        <button id="rate"> Rate </button>
-
-        <div class="flex2">
-            <div class="space">
-                <p class="enter"> Department </p>
-                <select name="semester" class="dept" id="semester"> 
-                    <option value="blank"> </option>
-                    <option value="dept">BIOL</option>
-                    <option value="dept">CHEM</option>
-                </select>
-            </div>
-    
-            <div class="space">
-                <p class="enter"> Course # </p>
-                <select name="year" class="dropdown2" id="year"> 
-                    <option value="blank"> </option>
-                    <option value="course">1102</option>
-                    <option value="course">1127Q</option>
-                </select>
-            </div>
-
-            <div class="space">
-                <p class="enter"> Instructor </p>
-                <select name="year" class="prof" id="year"> 
-                    <option value="blank"> </option>
-                    <option value="professor">Thomas Abbott</option>
-                    <option value="professor">Clyde Cady</option>
-                </select>
-            </div>
-
+         <div class="uconn">
+            <div class="empty"></div> 
+             <button id="rate"> Rate </button>
         </div>
+        
+        
 
-        <button id="rate"> Rate </button>
+        
 
         <div class="extra">
 

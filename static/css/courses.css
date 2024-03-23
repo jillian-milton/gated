@@ -72,7 +72,11 @@ input{
     width: 300px;
     height: 20px; 
     padding: 10px;
+    padding-left: 40px;
     margin: 20px;
+    background-image: url('../img/magnify.svg');
+    background-repeat: no-repeat;
+    background-position:10px 10px;
 }
 
 .dropdown{
@@ -110,7 +114,7 @@ p{
     
 }
 
-main, .center{
+main, .center, form{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -129,7 +133,9 @@ main, .center{
 select{
     height: 32px;
     width: 210px;
-    border: solid #067A7A 3px;
+    border: solid #067A7A;
+    border-radius: 3px;
+    -webkit-border-radius:0px;
     font-family: 'Open Sans';
 }
 
@@ -250,7 +256,7 @@ h2{
     background-image: linear-gradient(180deg, rgba(103, 91, 74, 1) , rgba(143, 126, 102, 1));
     padding-top: 4px;
     padding-bottom: 4px;
-    width: 430px; 
+    width: 100vw; 
     /* Gradient is supposed to reach the end of the screen */
 }
 

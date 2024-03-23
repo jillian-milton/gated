@@ -4,17 +4,7 @@ body{
 }
 
 .dropdown{
-    width: 77px;
-    height: 38px;
-}
-
-.dropdown2{
-    width: 77px;
-    height: 38px;
-}
-
-.dept{
-    width: 104px;
+    width: 120px;
     height: 38px;
 }
 
@@ -32,6 +22,17 @@ body{
 .flex2{
     display: flex;
     gap: 10px;
+}
+
+.uconn{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end; 
+}
+
+.empty{
+    width: 220px;
+    height: 38px;
 }
 
 .class{

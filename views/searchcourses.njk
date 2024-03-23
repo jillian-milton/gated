@@ -18,21 +18,22 @@
                     width="50" height="50"> </a>
             </div>
            
-            <nav class="closed open"> 
+          <nav class="closed open"> 
                 
                 <a href="/home"> Home </a>  
                 <hr>          
-                <a href="searchpeople.html"> Search People </a>
+                <a href="/searchpeople"> Search People </a>
                 <hr>
                 <a href="/searchcourses"> Search Courses </a>
                 <hr>
-                <a href="mycourses.html"> My Courses </a>
+                <a href="/mycourses"> My Courses </a>
                 <hr>
-                <a href="chats.html"> Chats </a>
+                <a href="/chats"> Chats </a>
                 <hr>
-                <a href="recognize.html"> Recognize Someone </a>
+                <a href="/recognize"> Recognize Someone </a>
                 
             </nav>
+
 
         </div>
        
@@ -45,38 +46,24 @@
     <main>
         <h1>Search Courses</h1>
 
-        <h2> Search by Course </h2>
-
-        <input type="text" placeholder="e.g. STAT 1100Q">
+      
        
-        <div class="flex2">
-            <div class="space">
-                <p class="enter"> Department </p>
-                <select name="semester" class="dept" id="semester"> 
-                    <option value="blank"> </option>
+       <form> 
+          <h2> Search by Course </h2>
 
-                     {% for courses in rows %}
+         <input type="text" placeholder="e.g. STAT 1100Q">
+         <div class="space">
+                    <p class="enter"> Course Number</p>
+                    <select name="number" id="number"> 
+                        <option value="blank"> </option>
+                        
+                         {% for courses in numbers %}
 
-                            <option>{{courses.subject}} </option>
+                            <option> <span>{{courses.subject}} </span><span>{{courses.course_number}}</span> </option>
                        
                      {% endfor %}
-                </select>
-            </div>
-        
-            <div class="space">
-                <p class="enter"> Course # </p>
-                <select name="year" class="dropdown2" id="year"> 
-                    <option value="blank"> </option>
-
-                     {% for courses in nums %}
-
-                            <option>{{courses.course_number}} </option>
-                       
-                     {% endfor %}
-                </select>
-            </div>
-        
-        </div>
+                    </select>
+                </div>
 
  <h2> Search by Instructor </h2>
 
@@ -84,7 +71,7 @@
 
         <div class="space">
                 <p class="enter"> Instructor </p>
-                <select name="year" class="prof" id="year"> 
+                <select name="prof" class="prof" id="year"> 
 
                      {% for courses in col %}
 
@@ -93,18 +80,77 @@
                      {% endfor %}
                 </select>
             </div>
-
+            <br>
            <button id="search"> Search </button>
+
+       </form>
+       
 
     </main>
 
     <div id="results">
-        
+        <section class="results">
+   <div class="center">
+   <div class="box">
+       <div class="row">
+           <img src="../img/profile.svg" class="rounded border">
+           <a href="/rating" class="professor">{{courses.instructor}}</a>
+       </div>
+       <div class="row2">
+           <p class="small">STAT 1100Q</p>
+           <a href="/mycourses"> <button id="add"> Add Course </button> </a>
+       </div>
+    
+   </div>
+</div>
+
+<div class="center">
+   <div class="box">
+       <div class="row">
+           <img src="../img/profile.svg" class="rounded border">
+           <a href="/rating" class="professor">Professor Cady</a>
+       </div>
+       <div class="row2">
+           <p class="small">BIOL 1107</p>
+           <a href="/mycourses"> <button id="add"> Add Course </button> </a>
+       </div>
+    
+   </div>
+</div>
+</section>
     </div>
 
 
 
 
-    <script src="../js/courses.js"></script>
+    <script>
+        let hamburger = document.querySelector('.hamburger');
+let open = document.querySelector('.open');
+let closed = document.querySelector('.closed');
+
+hamburger.addEventListener('click', function(){
+    open.classList.toggle('closed');
+})
+
+
+let search = document.querySelector('#search');
+let results = document.querySelector('#results');
+
+search.addEventListener('click', function() {
+   results.innerHTML = ` `
+})
+
+
+let profile = document.querySelector('#profile');
+profile.addEventListener('click', function() {
+    // window.location = '../html/profile.html';
+    window.location = '/profile';
+})
+
+
+
+
+
+    </script>
 </body>
 </html>

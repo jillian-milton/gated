@@ -8,5 +8,6 @@ hamburger.addEventListener('click', function(){
 
 let profile = document.querySelector('#profile');
 profile.addEventListener('click', function() {
-    window.location = '../html/profile.html';
+    // window.location = '../html/profile.html';
+    window.location = '/profile';
 })

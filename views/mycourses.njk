@@ -17,21 +17,22 @@
                     width="50" height="50"> </a>
             </div>
            
-            <nav class="closed open"> 
+          <nav class="closed open"> 
                 
-                <a href="home.html"> Home </a>  
+                <a href="/home"> Home </a>  
                 <hr>          
-                <a href="searchpeople.html"> Search People </a>
+                <a href="/searchpeople"> Search People </a>
                 <hr>
-                <a href="searchcourses.html"> Search Courses </a>
+                <a href="/searchcourses"> Search Courses </a>
                 <hr>
-                <a href="mycourses.html"> My Courses </a>
+                <a href="/mycourses"> My Courses </a>
                 <hr>
-                <a href="chats.html"> Chats </a>
+                <a href="/chats"> Chats </a>
                 <hr>
-                <a href="recognize.html"> Recognize Someone </a>
+                <a href="/recognize"> Recognize Someone </a>
                 
             </nav>
+
 
         </div>
        
@@ -49,64 +50,100 @@
             <button class="previous">Previous Semester</button>
         </div>
 
-        <table>
-            <tr>
-                <th>Course #</th>
-                <th>Course Title</th>
-                <th>Instructor</th>
-                <th>My Rating</th>
-            </tr>
-            <tr>
-                <td>DMD 3470</td>
-                <td>Web Design 2</td>
-                <td>Brian Daley</td>
-                <td><button id="rating">Incomplete</button></td>
-            </tr>
-            <tr>
-                <td>DMD 3475</td>
-                <td>Coding for the Web</td>
-                <td>Brian Daley</td>
-                <td class="complete">Complete</td>
-            </tr>
-            <tr>
-                <td>DMD 3035</td>
-                <td>Interaction Design</td>
-                <td>Ting Zhou</td>
-                <td class="complete">Complete</td>
-            </tr>
-            <tr>
-                <td>HRTS 3254</td>
-                <td class="wrap">Business Solutions to Societal Challenges</td>
-                <td>Rachel Chambers</td>
-                <td class="complete">Complete</td>
-            </tr>
+         <section class="results">
+            <div class="col">
+                <div class="image">
+                     <h3> DMD 3470 </h3>
+                    <h2>Web Design 2</h2>
+                    <strong> <span class="terms"> Instructor: </span> </strong>
+                    <span class="prof">Brian Daley </span>
 
-        </table>
+                     <div class="flex"> 
+                          <h3>Rating: </h3>
+                         <button id="rating">Incomplete</button>
+                    </div>
+                </div>
+                          
+            </div>
+
+             <div class="image">
+                     <h3> DMD 3475 </h3>
+                    <h2>Coding for the Web</h2>
+                    <strong> <span class="terms"> Instructor: </span> </strong>
+                    <span class="prof">Brian Daley </span>
+
+                     <div class="flex"> 
+                          <h3>Rating: </h3>
+                         <button id="rating">Incomplete</button>
+                    </div>
+                </div>
+
+        </section>
+
+
+        <section class="results">
+            <div class="col">
+                <div class="image">
+                     <h3> DMD 3035 </h3>
+                    <h2>Interaction Design</h2>
+                    <strong> <span class="terms"> Instructor: </span> </strong>
+                    <span class="prof">Ting Zhou </span>
+
+                    <div class="flex"> 
+                          <h3>Rating: </h3>
+                         <h3 class="complete"> Complete </h3>
+                    </div>
+                </div>
+                          
+            </div>
+
+             <div class="image">
+                     <h3> HRTS 3254 </h3>
+                    <h2>Business Solutions to Societal Challenges</h2>
+                    <strong> <span class="terms"> Instructor: </span> </strong>
+                    <span class="prof">Rachel Chambers </span>
+
+                     <div class="flex"> 
+                          <h3>Rating: </h3>
+                         <h3 class="complete"> Complete </h3>
+                    </div>
+                </div>
+
+        </section>
 
         <h2 class="gradient"> Future Courses </h2>
 
-        <table>
-            <tr>
-                <th>Course #</th>
-                <th>Course Title</th>
-                <th>Instructor</th>
-                <th>Rating</th>
-            </tr>
-            <tr>
-                <td>CHEM 1127Q</td>
-                <td>General Chemistry 1</td>
-                <td>Clyde Cady</td>
-                <td><button class="rate">3.5</button></td>
-            </tr>
-            <tr>
-                <td>BIOL 1107</td>
-                <td>Principles of Biology 1</td>
-                <td>Thomas Abbott</td>
-                <td><button class="rate">4.2</button></td>
-            </tr>
-           
-        </table>
+          <section class="results">
+            <div class="col">
+                <div class="image">
+                     <h3> CHEM 1127Q </h3>
+                    <h2>General Chemistry 1</h2>
+                    <strong> <span class="terms"> Instructor: </span> </strong>
+                    <span class="prof">Clyde Cady </span>
 
+                     <div class="flex"> 
+                          <h3>Rating: </h3>
+                         <button class="rate">3.5</button>
+                    </div>
+                </div>
+                          
+            </div>
+
+             <div class="image">
+                     <h3> BIOL 1107 </h3>
+                    <h2>Principles of Biology 1</h2>
+                    <strong> <span class="terms"> Instructor: </span> </strong>
+                    <span class="prof">Thomas Abbott </span>
+
+                     <div class="flex"> 
+                          <h3>Rating: </h3>
+                        <button class="rate">4.2</button>
+                    </div>
+                </div>
+
+        </section>
+
+        <br><br>
 
     </main>
 

@@ -71,16 +71,30 @@ h1{
 
 h2{
     font-family: 'Montserrat';
-    font-size: 16px;
+    font-size: 14px;
+    color: #067A7A;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h3{
+    font-family: 'Montserrat';
+    font-size: 14px;
     color: #675B4A;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .flex{
     display: flex;
-    gap: 10px;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    margin: 0px;
 }
+
+
 
 .previous{
     background-color: #067A7A;
@@ -92,21 +106,44 @@ h2{
     border-radius: 4px; 
     width: 156px;
     height: 33px; 
-   
+    white-space: nowrap;
 }
 
-th{
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+.image{
+    background-color: white;
+    border: solid 2px #675B4A;
+    border-radius: 10px;
+    width: 180px;
+    height: 200px;
+}
+
+.terms{
     font-family: 'Montserrat';
-    font-size: 15px;
+    font-size: 12px;
     color: #675B4A;
     padding: 5px;
 }
 
-td{
-    font-family: 'Open Sans';
-    font-size: 14px;
-    color: black;
-    padding: 5px;
+.prof{
+    font-family: 'Montserrat';
+    font-size: 12px;
+    color: #675B4A;
+    padding-left: 5px;
+    white-space: wrap;
+}
+
+
+
+.results{
+    padding-top: 20px;
 }
 
 .complete{
@@ -114,11 +151,6 @@ td{
     font-size: 14px;
     font-weight: bold;
     color: #067A7A;
-    padding: 5px;
-}
-
-.wrap{
-    text-wrap: wrap;
 }
 
 #rating{
@@ -127,7 +159,7 @@ td{
     font-family: 'Montserrat';
     font-weight: bold;
     border-style: none;
-   
+    padding: 6px;
 }
 
 .gradient{

@@ -37,17 +37,22 @@ p{
 input{
     height: 30px;
     width: 200px;
-    border: solid #067A7A 2px;
+    border: solid #067A7A;
+    border-radius: 2px;
     font-family: 'Open Sans';
     font-size: 16px;
+    /* -webkit-appearance: none; */
+    -webkit-border-radius:0px;
 }
 
 select{
     height: 32px;
     width: 210px;
-    border: solid #067A7A 2px;
+    border: solid #067A7A;
+    border-radius: 2px;
     font-family: 'Open Sans';
     font-size: 16px; 
+    -webkit-border-radius:0px;
 }
 
 .add{

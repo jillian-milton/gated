@@ -71,8 +71,23 @@ input{
     width: 300px;
     height: 20px; 
     padding: 10px;
-    margin: 20px;
+    margin: 10px;
 }
+
+#name{
+    border: 2px solid #675B4A;
+    font-size: 14px;
+    font-family: 'Open Sans';
+    width: 300px;
+    height: 20px; 
+    padding: 10px;
+    padding-left: 40px;
+    margin: 20px;
+    background-image: url('../img/magnify.svg');
+    background-repeat: no-repeat;
+    background-position:10px 10px;
+}
+
 
 h2{
     font-family: 'Montserrat';
@@ -89,7 +104,9 @@ h2{
 select{
     height: 32px;
     width: 210px;
-    border: solid #067A7A 2px;
+    border: solid #067A7A;
+    border-radius: 2px;
+    -webkit-border-radius:0px;
     font-family: 'Open Sans';
 }
 

@@ -18,21 +18,22 @@
                     width="50" height="50"> </a>
             </div>
            
-            <nav class="closed open"> 
+           <nav class="closed open"> 
                 
-                <a href="home.html"> Home </a>  
+                <a href="/home"> Home </a>  
                 <hr>          
-                <a href="searchpeople.html"> Search People </a>
+                <a href="/searchpeople"> Search People </a>
                 <hr>
-                <a href="searchcourses.html"> Search Courses </a>
+                <a href="/searchcourses"> Search Courses </a>
                 <hr>
-                <a href="mycourses.html"> My Courses </a>
+                <a href="/mycourses"> My Courses </a>
                 <hr>
-                <a href="chats.html"> Chats </a>
+                <a href="/chats"> Chats </a>
                 <hr>
-                <a href="recognize.html"> Recognize Someone </a>
+                <a href="/recognize"> Recognize Someone </a>
                 
             </nav>
+
 
         </div>
        
@@ -46,8 +47,7 @@
     <main> 
         <h1>Search People</h1>
         
-            <input type="text" placeholder="Find people by">
-            <img src="../img/magnify.svg" height="16" width="16">
+            <input id="name" type="text" placeholder="Type person's name">
             
             <h2> Academics </h2>
            
@@ -63,22 +63,32 @@
             </div>
     
                 <div class="space">
-                    <p class="enter"> Major </p>
-                    <select name="major" id="major"> 
-                        <option value="blank"> </option>
-                        <option value="accounting">Accounting</option>
-                        <option value="animal science">Animal Science</option>
-                        <option value="biology">Biology</option>
-                    </select>
-                </div>
+                <p class="enter"> Major</p>
+
+                <select name="major" id="major">
+
+                    <option value="blank"> </option>
+                    <option value="blank">Undecided</option>
+
+                     {% for majors in rows %}
+
+                            <option>{{majors.name}} </option>
+                       
+                     {% endfor %}
+
+                </select>
+            </div>
 
                 <div class="space">
                     <p class="enter"> Course Number</p>
                     <select name="number" id="number"> 
                         <option value="blank"> </option>
-                        <option value="num1">CSE 2050</option>
-                        <option value="num2">CSE 2500</option>
-                        <option value="num3">CSE 3100</option>
+                        
+                         {% for courses in numbers %}
+
+                            <option> <span>{{courses.subject}} </span><span>{{courses.course_number}}</span> </option>
+                       
+                     {% endfor %}
                     </select>
                 </div>
 
@@ -99,24 +109,27 @@
             <div class="space">
                 <p class="enter"> Home Country </p>
                 <select name="country" id="country"> 
-                    <option value="blank"> </option>
-                    <option value="accounting">United States</option>
-                    <option value="afghan">Afghanistan</option>
-                    <option value="china">China</option>
-                    <option value="france">France</option>
-                    <option value="germany">Germany</option>
+                      <option value="blank"> </option>
+                        
+                    {% for countries in origin %}
+
+                        <option>{{countries.name}} </option>
+                       
+                     {% endfor %}
                 </select>
             </div>
 
             <div class="space">
                 <p class="enter"> Home State </p>
                 <select name="country" id="country"> 
-                    <option value="blank"> </option>
-                    <option value="accounting">Alabama</option>
-                    <option value="afghan">Connecticut</option>
-                    <option value="china">New Jersey</option>
-                    <option value="france">New York</option>
-                    <option value="germany">Ohio</option>
+                   
+                     <option value="blank"> </option>
+                        
+                    {% for states in us %}
+
+                        <option>{{states.abbr}} </option>
+                       
+                     {% endfor %}
                 </select>
             </div>
 
@@ -124,11 +137,11 @@
                 <p class="enter"> UConn Dorm </p>
                 <select name="country" id="country"> 
                     <option value="blank"> </option>
-                    <option value="accounting">Buckley</option>
-                    <option value="afghan">Shippee</option>
-                    <option value="china">South</option>
-                    <option value="france">McMahon</option>
-                    <option value="germany">North</option>
+                     {% for dorms in room %}
+
+                        <option>{{dorms.name}} </option>
+                       
+                     {% endfor %}
                 </select>
             </div>
 
@@ -149,11 +162,11 @@
                 <p class="enter"> Clubs </p>
                 <select name="major" id="major"> 
                     <option value="blank"> </option>
-                    <option value="accounting">Acapella Club</option>
-                    <option value="animal science">Chamber Orchestra</option>
-                    <option value="biology">Ramen Club</option>
-                    <option value="biology">Tabletop Gaming Club</option>
-                    <option value="biology">Women in Engineering</option>
+                    {% for clubs in moon %}
+
+                        <option>{{clubs.name}}</option>
+                       
+                     {% endfor %}
                 </select>
             </div>
 
@@ -161,11 +174,23 @@
                 <p class="enter"> Sports </p>
                 <select name="number" id="number"> 
                     <option value="blank"> </option>
-                    <option value="blank">Basketball</option>
-                    <option value="num1">Football</option>
-                    <option value="num2">Ice Hockey</option>
-                    <option value="num3">Track and Field</option>
-                    <option value="biology">Volleyball</option>
+                     {% for sports in madness %}
+
+                        <option>{{sports.name}} </option>
+                       
+                     {% endfor %}
+                </select>
+            </div>
+
+            <div class="space">
+                <p class="enter"> Fraternities </p>
+                <select name="number" id="number"> 
+                    <option value="blank"> </option>
+                     {% for frats in greek %}
+
+                        <option>{{frats.name}} </option>
+                       
+                     {% endfor %}
                 </select>
             </div>
 

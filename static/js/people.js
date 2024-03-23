@@ -9,10 +9,12 @@ hamburger.addEventListener('click', function(){
 let search = document.querySelector('#search');
 
 search.addEventListener('click', function() {
-    window.location = '../html/resultspeople.html';
+    // window.location = '../html/resultspeople.html';
+    window.location = '/resultspeople';
 })
 
 let profile = document.querySelector('#profile');
 profile.addEventListener('click', function() {
-    window.location = '../html/profile.html';
+    // window.location = '../html/profile.html';
+    window.location = '/profile';
 })

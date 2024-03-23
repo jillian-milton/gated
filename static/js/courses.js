@@ -16,11 +16,11 @@ search.addEventListener('click', function() {
    <div class="box">
        <div class="row">
            <img src="../img/profile.svg" class="rounded border">
-           <a href="../html/rating.html" class="professor">Professor McLaughlin</a>
+           <a href="/rating" class="professor">Professor McLaughlin</a>
        </div>
        <div class="row2">
            <p class="small">STAT 1100Q</p>
-           <button id="add"> Add Course </button>
+           <a href="/mycourses"> <button id="add"> Add Course </button> </a>
        </div>
     
    </div>
@@ -30,11 +30,11 @@ search.addEventListener('click', function() {
    <div class="box">
        <div class="row">
            <img src="../img/profile.svg" class="rounded border">
-           <a href="../html/rating.html" class="professor">Professor Cady</a>
+           <a href="/rating" class="professor">Professor Cady</a>
        </div>
        <div class="row2">
            <p class="small">BIOL 1107</p>
-           <button id="add"> Add Course </button>
+           <a href="/mycourses"> <button id="add"> Add Course </button> </a>
        </div>
     
    </div>
@@ -42,9 +42,11 @@ search.addEventListener('click', function() {
 </section>`
 })
 
+
 let profile = document.querySelector('#profile');
 profile.addEventListener('click', function() {
-    window.location = '../html/profile.html';
+    // window.location = '../html/profile.html';
+    window.location = '/profile';
 })
 
 

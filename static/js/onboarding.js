@@ -8,8 +8,8 @@ back.addEventListener('click', function() {
 let done = document.querySelector('#done');
 
 done.addEventListener('click', function() {
-    // window.location = '/onboarding2';
-    window.location = '../html/onboarding2.html';
+    window.location = '/onboarding2';
+    //window.location = '../html/onboarding2.html';
 })
 
 let add = document.querySelector('#add');

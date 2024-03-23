@@ -152,31 +152,41 @@
             <div class="space">
                 <p class="enter"> UConn Dorm </p>
                 <select name="country" id="country"> 
-                    <option value="blank"> </option>
-                    <option value="accounting">Buckley</option>
-                    <option value="afghan">Shippee</option>
-                    <option value="china">South</option>
-                    <option value="france">McMahon</option>
-                    <option value="germany">North</option>
+                     <option value="blank"> </option>
+                     {% for dorms in room %}
+
+                        <option>{{dorms.name}} </option>
+                       
+                     {% endfor %}
                 </select>
             </div>
 
         <div class="space">
             <p class="enter"> Country </p>
             <select name="country" id="country"> 
-                <option value="blank"> </option>
-                <option value="accounting">United States</option>
-                <option value="afghan">Afghanistan</option>
-                <option value="china">China</option>
-                <option value="france">France</option>
-                <option value="germany">Germany</option>
+                 <option value="blank"> </option>
+                        
+                    {% for countries in origin %}
+
+                        <option>{{countries.name}} </option>
+                       
+                     {% endfor %}
             </select>
         </div>
 
-        <div class="space">
-            <p class="enter"> State </p>
-            <input type="text">
-        </div>
+         <div class="space">
+                <p class="enter"> State </p>
+                <select name="country" id="country"> 
+                   
+                     <option value="blank"> </option>
+                        
+                    {% for states in us %}
+
+                        <option>{{states.abbr}} </option>
+                       
+                     {% endfor %}
+                </select>
+            </div>
 
         <div class="space">
             <p class="enter"> County </p>

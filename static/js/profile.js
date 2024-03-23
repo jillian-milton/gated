@@ -8,5 +8,6 @@ hamburger.addEventListener('click', function(){
 
 let signout = document.querySelector('#signout');
 signout.addEventListener('click', function() {
-    window.location = '../html/index.html';
+    // window.location = '../html/index.html'
+    window.location = '/';
 })
