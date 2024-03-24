@@ -71,11 +71,11 @@ h1{
 
 h2{
     font-family: 'Montserrat';
-    font-size: 14px;
+    font-size: 16px;
     color: #067A7A;
     padding: 5px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 0px;
+    width: 94%;
 }
 
 h3{
@@ -83,8 +83,10 @@ h3{
     font-size: 14px;
     color: #675B4A;
     padding: 5px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    white-space: nowrap;
+    margin-left: 0px;
+    margin-bottom: 4px;
+    margin-top: 4px;
 }
 
 .flex{
@@ -127,17 +129,18 @@ section{
 
 .terms{
     font-family: 'Montserrat';
-    font-size: 12px;
+    font-size: 14px;
     color: #675B4A;
-    padding: 5px;
+    padding-left: 5px;
 }
 
 .prof{
     font-family: 'Montserrat';
-    font-size: 12px;
+    font-size: 14px;
     color: #675B4A;
-    padding-left: 5px;
     white-space: wrap;
+    width: 100%;
+    display: inline;
 }
 
 
