@@ -137,6 +137,7 @@ select{
     border-radius: 3px;
     -webkit-border-radius:0px;
     font-family: 'Open Sans';
+    background-color: white;
 }
 
 .space{

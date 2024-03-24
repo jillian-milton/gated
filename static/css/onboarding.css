@@ -41,7 +41,7 @@ input{
     border-radius: 2px;
     font-family: 'Open Sans';
     font-size: 16px;
-    -webkit-appearance: none;
+    background-color: white;
     -webkit-border-radius:0px;
 }
 
@@ -53,7 +53,7 @@ select{
     font-family: 'Open Sans';
     font-size: 16px; 
     -webkit-border-radius:0px;
-    -webkit-appearance: none;
+    background-color: white;
 }
 
 .add{

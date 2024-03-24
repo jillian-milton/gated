@@ -66,8 +66,8 @@ select{
     width: 210px;
     border: solid #067A7A 2px;
     border-radius: 2px;
+    background-color: white;
     -webkit-border-radius:0px;
-    -webkit-appearance: none;
     font-family: 'Open Sans';
 }
 
