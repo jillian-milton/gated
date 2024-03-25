@@ -6,11 +6,15 @@ hamburger.addEventListener('click', function(){
     open.classList.toggle('closed');
 })
 
-let search = document.querySelector('#search');
+let search1 = document.querySelector('#search1');
+let search3 = document.querySelector('#search3');
 
-search.addEventListener('click', function() {
-    // window.location = '../html/resultspeople.html';
+search1.addEventListener('click', function() {
     window.location = '/resultspeople';
+})
+
+search3.addEventListener('click', function() {
+    window.location = '/lacrosse';
 })
 
 let profile = document.querySelector('#profile');

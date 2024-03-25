@@ -48,10 +48,10 @@
 
       
        
-       <form> 
+       <form action="/searchcourses" method="get"> 
           <h2> Search by Course </h2>
 
-         <input type="text" placeholder="e.g. STAT 1100Q">
+         <input type="text" placeholder="e.g. STAT 1100Q" name="q" id="q" value="{{query}}">
          <div class="space">
                     <p class="enter"> Course Number</p>
                     <select name="number" id="number"> 
@@ -64,6 +64,10 @@
                      {% endfor %}
                     </select>
                 </div>
+
+         <button id="search" type="submit"> Search </button>
+
+       </form>
 
  <h2> Search by Instructor </h2>
 
@@ -81,76 +85,45 @@
                 </select>
             </div>
             <br>
-           <button id="search"> Search </button>
-
-       </form>
-       
-
+             <button id="search" type="submit"> Search </button>
     </main>
+
+{% if numbers.length > 0 %}
 
     <div id="results">
         <section class="results">
-   <div class="center">
-   <div class="box">
-       <div class="row">
-           <img src="../img/profile.svg" class="rounded border">
-           <a href="/rating" class="professor">{{courses.instructor}}</a>
-       </div>
-       <div class="row2">
-           <p class="small">STAT 1100Q</p>
-           <a href="/mycourses"> <button id="add"> Add Course </button> </a>
-       </div>
-    
-   </div>
-</div>
+            {% for courses in outcome %}
+                <div class="center">
+                    <div class="box">
+                        <div class="row">
+                            <img src="../img/profile.svg" class="rounded border">
+                            {% if courses.instructor == 'Howell,Amy R.' %}
+                                <a href="/rating" class="professor">{{courses.instructor}}</a>
+                                {% else %}
+                                 <a href="/rating2" class="professor">{{courses.instructor}}</a>
+                            {% endif %}
+                           
+                        </div>
+                        <div class="row2">
+                            <p class="small">{{courses.subject}} {{courses.course_number}}</p>
+                            <a href="/mycourses"> <button id="add"> Add Course </button> </a>
+                        </div>
+                         <p class="small">{{courses.course_name}}</p>
+                    </div>
+                </div>
 
-<div class="center">
-   <div class="box">
-       <div class="row">
-           <img src="../img/profile.svg" class="rounded border">
-           <a href="/rating" class="professor">Professor Cady</a>
-       </div>
-       <div class="row2">
-           <p class="small">BIOL 1107</p>
-           <a href="/mycourses"> <button id="add"> Add Course </button> </a>
-       </div>
-    
-   </div>
-</div>
-</section>
+                {% endfor %}
+        </section>
     </div>
 
+     {% else %}
+
+     <section class="white"></section>
+
+            
+{% endif %}
 
 
-
-    <script>
-        let hamburger = document.querySelector('.hamburger');
-let open = document.querySelector('.open');
-let closed = document.querySelector('.closed');
-
-hamburger.addEventListener('click', function(){
-    open.classList.toggle('closed');
-})
-
-
-let search = document.querySelector('#search');
-let results = document.querySelector('#results');
-
-search.addEventListener('click', function() {
-   results.innerHTML = ` `
-})
-
-
-let profile = document.querySelector('#profile');
-profile.addEventListener('click', function() {
-    // window.location = '../html/profile.html';
-    window.location = '/profile';
-})
-
-
-
-
-
-    </script>
+    <script src="../static/js/courses.js"></script>
 </body>
 </html>

@@ -181,6 +181,13 @@ section{
     background-color: white;
 }
 
+.white{
+    background-color: white;
+    height: 100vh;
+    margin: 0px;
+    z-index: 0;
+}
+
 .box{
     background-color: white;
     border: solid 1px #675B4A;
@@ -242,7 +249,6 @@ h3{
     gap: 50px;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 20px;
 }
 
 a{

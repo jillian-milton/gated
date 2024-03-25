@@ -87,10 +87,19 @@ button{
     padding-bottom: 20px;
 }
 
-p{
+.center{
     font-family: 'Montserrat';
-    font-size: 20px;
+    font-size: 14px;
     color: black;
+}
+
+.let{
+    font-family: 'Montserrat';
+    font-size: 14px;
+    color: white;
+    background-color: #067A7A;
+    padding: 5px;
+    margin: 10px;
 }
 
 h2{
@@ -102,12 +111,12 @@ h2{
     padding-top: 10px;
 }
 
-.chick{
-    width: 76px;
+/* .chick{
+    width: 50%;
     height: 38px; 
     text-align: center;
     background-color: #067A7A;
-}
+} */
 
 .chick .center{
     text-align: center;

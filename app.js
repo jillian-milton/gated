@@ -103,7 +103,24 @@ app.get('/survey', (req, res) => {
 
 app.get('/rating', (req, res) => {
 
-    res.render('rating.njk');
+    res.render('rating.njk', {
+        class: 'CHEM 2443: Organic Chemistry',
+        professor: 'Amy Howell',
+        course_rating: '4.0',
+        prof_rating: '4.3',
+    });
+
+})
+
+
+app.get('/rating2', (req, res) => {
+
+    res.render('rating2.njk', {
+        class: 'CHEM 2443: Organic Chemistry',
+        professor: 'Michael Keinzler',
+        course_rating: '3.0',
+        prof_rating: '3.2',
+    });
 
 })
 
@@ -177,10 +194,21 @@ app.get('/searchcourses', async (req, res) => {
     let prof = []
     prof = await client.query("SELECT distinct instructor FROM courses ORDER BY instructor")
 
+    let query = req.query.q
+    let results = []
+    
+    if (query !== undefined) {
+        query = query.toLowerCase()
+        // let likeQuery = `%${query}%`
+        // results = await client.query("SELECT DISTINCT subject, course_number, instructor, course_name FROM courses WHERE LOWER(subject) LIKE $1 AND course_number LIKE $2", [likeQuery, likeQuery])
+        results = await client.query("SELECT DISTINCT subject, course_number, instructor, course_name FROM courses WHERE subject LIKE '%CHEM%' AND course_number LIKE '%2443%'")
+    }
+    
     
     res.render('searchcourses.njk', {
         numbers: coursenum.rows,
-        col: prof.rows
+        col: prof.rows,
+        outcome: results.rows,
     });
 
 })
@@ -188,6 +216,12 @@ app.get('/searchcourses', async (req, res) => {
 app.get('/resultspeople', (req, res) => {
 
     res.render('resultspeople.njk');
+
+})
+
+app.get('/lacrosse', (req, res) => {
+
+    res.render('lacrosse.njk');
 
 })
 

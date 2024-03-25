@@ -168,6 +168,10 @@ button{
     height: 56px; 
 }
 
+.pic{
+    border-radius: 50%;
+}
+
 p{
     font-family: 'Open Sans';
     font-size: 14px;

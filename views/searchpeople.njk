@@ -86,12 +86,31 @@
                         
                          {% for courses in numbers %}
 
-                            <option> <span>{{courses.subject}} </span><span>{{courses.course_number}}</span> </option>
+                            <option value='{{courses.subject}}'> <span>{{courses.subject}} </span><span>{{courses.course_number}}</span> </option>
                        
                      {% endfor %}
                     </select>
                 </div>
 
+                 <div class="space">
+                    <p class="enter"> Semester Taken </p>
+                    <select name="year" id="year"> 
+                        <option value="blank"> </option>
+                        <option value="freshman">Fall</option>
+                        <option value="sophomore">Spring</option>
+                    </select>
+                </div>
+
+                <div class="space">
+                    <p class="enter"> Year Taken </p>
+                    <select name="year" id="year"> 
+                        <option value="blank"> </option>
+                        <option value="freshman">2023</option>
+                        <option value="sophomore">2024</option>
+                    </select>
+                </div>
+
+                <button id="search1">Search</button>
        
             <h2> Background </h2>
 
@@ -155,6 +174,8 @@
                 <input type="text" class="green">
             </div>
 
+            <button id="search2">Search</button>
+
 
             <h2> Social </h2>
 
@@ -194,8 +215,8 @@
                 </select>
             </div>
 
-            <button id="search">Search</button>
-
+            <button id="search3">Search</button>
+<br><br>
     </main>
 
     <script src="../js/people.js"></script>

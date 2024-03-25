@@ -10,37 +10,13 @@ hamburger.addEventListener('click', function(){
 let search = document.querySelector('#search');
 let results = document.querySelector('#results');
 
-search.addEventListener('click', function() {
-   results.innerHTML = ` <section class="results">
-   <div class="center">
-   <div class="box">
-       <div class="row">
-           <img src="../img/profile.svg" class="rounded border">
-           <a href="/rating" class="professor">Professor McLaughlin</a>
-       </div>
-       <div class="row2">
-           <p class="small">STAT 1100Q</p>
-           <a href="/mycourses"> <button id="add"> Add Course </button> </a>
-       </div>
-    
-   </div>
-</div>
-
-<div class="center">
-   <div class="box">
-       <div class="row">
-           <img src="../img/profile.svg" class="rounded border">
-           <a href="/rating" class="professor">Professor Cady</a>
-       </div>
-       <div class="row2">
-           <p class="small">BIOL 1107</p>
-           <a href="/mycourses"> <button id="add"> Add Course </button> </a>
-       </div>
-    
-   </div>
-</div>
-</section>`
-})
+//Query Selector all loop
+let add = document.querySelectorAll('.add');
+add.forEach(btn => {
+    btn.addEventListener('click', function() {
+        window.location = '/mycourses';
+    })
+});
 
 
 let profile = document.querySelector('#profile');
